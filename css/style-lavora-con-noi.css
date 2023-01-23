@@ -1,0 +1,179 @@
+.section-1 {
+    
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1350px;
+    width: 100%;
+    margin: 10px auto 0px;
+}
+.section-1 .container-1 {
+    width: 100%;
+    padding: 50px 0px;
+    
+}
+.section-1 .container-2 {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 100px;
+}   
+.titolo {
+    font-size: 40px;
+    color: #0088CC;
+    font-weight: bolder;
+    margin-bottom: 25px;
+} 
+.col50 {
+    width: 50%;
+    background-color: #ECECEC;
+    border-radius: 20px;
+    border: 1px solid #D1D1D1;
+    padding: 20px 30px 20px 20px;
+}
+.col50:first-of-type {
+  margin-right: 12px;
+}
+.col50:last-of-type {
+    margin-left: 12px;
+}
+.row-titolo {
+    
+    display: flex;
+    justify-content:flex-start ;
+    align-items: center;
+    
+}
+.row-titolo img {
+    margin-right: 0px;
+}
+.row-bottoni {
+    
+    
+    margin-left: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.row-collegamento{
+   width: 100%;
+   background-color: #fff;
+   border-radius: 15px;
+   border: 1px solid #DCDCDC;
+   padding: 15px 20px;
+   margin-bottom: 15px;
+   display: flex;
+   justify-content: space-between;
+   cursor: pointer;
+}
+.row-collegamento:hover{
+    filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.1));
+}
+
+
+
+.row-titolo h3 {
+    font-weight: 400;
+font-size: 22px;
+color: #2C333A;
+}
+ 
+.row-collegamento h4 {
+    font-weight: 400;
+    font-size: 16px;
+    
+    
+    color: #0088CC;
+}
+.p-big {
+    font-weight: 500;
+font-size: 19px;
+
+
+
+color: #2C333A;
+  
+}
+.p-standard {
+    color: #515151;
+}
+.spazio {
+    margin-top: 23px;
+}
+
+.container-1 .p-big {
+    margin-bottom: 10px;
+}
+
+/* ----------------------------------------------media desk---------------------------------------------------------------- */
+@media only screen and (min-width: 1281px) {
+   
+}
+
+/* ----------------------------------------------media notebook---------------------------------------------------------------- */
+@media only screen and (min-width: 1090px) and (max-width: 1280px){
+
+}
+
+/* ----------------------------------------------media tablet---------------------------------------------------------------- */
+@media only screen and (min-width: 701px) and (max-width: 1089px){
+    .section-1 .container-2 {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        margin-bottom: 100px;
+    }  
+    .col50 {
+        width: 100%;
+        background-color: #ECECEC;
+        border-radius: 20px;
+        border: 1px solid #D1D1D1;
+        padding: 20px 30px 20px 20px;
+    } 
+    .col50:first-of-type {
+        margin-right: 0px;
+        margin-bottom: 35px;
+      }
+      .col50:last-of-type {
+          margin-left: 0px;
+      }
+      .row-bottoni {
+        margin-left: 0px;
+      }
+}    
+
+/* ----------------------------------------------media mobile---------------------------------------------------------------- */
+@media only screen and (max-width: 700px) {
+    .section-1 .container-2 {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        margin-bottom: 100px;
+    }  
+    .col50 {
+        width: 100%;
+        background-color: #ECECEC;
+        border-radius: 20px;
+        border: 1px solid #D1D1D1;
+        padding: 20px 20px 20px 20px;
+    } 
+    .col50:first-of-type {
+        margin-right: 0px;
+        margin-bottom: 25px;
+      }
+      .col50:last-of-type {
+          margin-left: 0px;
+      }
+      .row-bottoni {
+        margin-left: 0px;
+      }
+
+}    

@@ -1,0 +1,273 @@
+
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1350px;
+    width: 100%;
+    margin: 10px auto 0px;
+}
+.section-1 .container-1 {
+    width: 100%;
+    
+    padding: 50px 0px;
+}    
+
+.titolo-sezione {
+    font-size: 32px;
+    font-weight: 500;
+    color: #0088cc;
+    padding-bottom: 16px;
+    font-size: 40px;
+    color: #0088CC;
+    font-weight: bolder;
+}
+.section-1 .container-1 p {
+    font-size: 20px;
+    font-weight: 300;
+}
+.back-color {
+    background-color: #ececec;
+}
+.section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1350px;
+    width: 100%;
+    margin: 10px auto 0px;
+    
+  
+}
+.section-2 .container-2 {
+    width: 100%;
+    padding: 50px 0px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.padding-sotto {
+    padding-bottom: 100px;
+}
+
+.section-2 .container-2 .col-50 {
+    width: 50%;
+}
+.section-2 .container-2 .col-50:first-of-type {
+    padding-right: 40px;
+}
+.section-2 .container-2 .col-50:last-of-type {
+    padding-left: 40px;
+}
+.section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1350px;
+    width: 100%;
+    margin: 10px auto 0px;
+}
+.section-3 .container-3 {
+    width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}   
+.section-3 .container-3 .col-50 {
+    width: 50%;
+}
+.section-3 .container-3 .col-50:first-of-type {
+    padding-right: 40px;
+}
+.section-3 .container-3 .col-50:last-of-type {
+    padding-left: 40px;
+}
+.p-big {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 45px;
+    padding: 20px;
+    color:#2C333A;
+    background-color: #ECECEC;
+    border-radius: 20px;
+    border: 1px solid #D1D1D1;
+}
+.p-standard{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #5D7079;
+}
+
+
+.h4-big {
+    font-size: 16px!important;
+    font-weight: 500!important;
+    color: #2C333A!important;
+}
+.box-distribution {
+    width: 100%;
+    max-width: 1200px;
+    padding-bottom: 18px;
+}
+.testo-distribution {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+.testo-distribution h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+.testo-distribution p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: right;
+    letter-spacing: 0.03em;
+}  
+.misuratore-back {
+    height: 22px;
+    background:  #ECECEC;
+    border-radius: 30px;
+}
+.misuratore-colore {
+    width: 2%;
+    height: 16px;
+    background-color: #0088CC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+.misuratore-pieno-1 {
+    width: 100%;
+    transition: 2s;
+}
+.misuratore-pieno-2 {
+    width: 100%;
+    transition: 2s;
+    transition-delay: 0.2s;
+}
+.misuratore-pieno-3 {
+    width: 100%;
+    transition: 2s;
+    transition-delay: 0.4s;
+}
+.misuratore-pieno-4 {
+    width: 100%;
+    transition: 2s;
+    transition-delay: 0.6s;
+}
+
+.align-sopra {
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start!important;
+}  
+.p-big strong {
+    font-weight: 600;
+}
+.col-50 img {
+    border-radius: 15px;
+}
+
+
+/* ----------------------------------------------media desk---------------------------------------------------------------- */
+@media only screen and (min-width: 1281px) {
+   
+ }
+ 
+/* ----------------------------------------------media notebook---------------------------------------------------------------- */
+ @media only screen and (min-width: 1090px) and (max-width: 1280px){
+ 
+ }
+
+ /* ----------------------------------------------media tablet---------------------------------------------------------------- */
+@media only screen and (min-width: 701px) and (max-width: 1089px){
+    .section-2 .container-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .section-2 .container-2 .col-50 {
+        
+        width: 100%;
+    }
+    .section-2 .container-2 .col-50:first-of-type {
+        padding-right: 0px;
+        margin-bottom: 40px;
+    }
+    .section-2 .container-2 .col-50:last-of-type {
+        padding-left: 0px;
+    }
+    .section-3 .container-3 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }  
+    .section-3 .container-3 .col-50 {
+        
+        width: 100%;
+    }
+    .section-3 .container-3 .col-50:first-of-type {
+        padding-right: 0px;
+    }
+    .section-3 .container-3 .col-50:last-of-type {
+        padding-left: 0px;
+    }
+}    
+
+/* ----------------------------------------------media mobile---------------------------------------------------------------- */
+@media only screen and (max-width: 700px) {
+    .section-2 .container-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .section-2 .container-2 .col-50 {
+        
+        width: 100%;
+    }
+    .section-2 .container-2 .col-50:first-of-type {
+        padding-right: 0px;
+        margin-bottom: 40px;
+    }
+    .section-2 .container-2 .col-50:last-of-type {
+        padding-left: 0px;
+    }
+    .section-3 .container-3 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }  
+    .section-3 .container-3 .col-50 {
+       
+        width: 100%;
+    }
+    .section-3 .container-3 .col-50:first-of-type {
+        padding-right: 0px;
+    }
+    .section-3 .container-3 .col-50:last-of-type {
+        padding-left: 0px;
+    }
+    .box-distribution {
+        width: 100%;
+        
+    }
+}    
