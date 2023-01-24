@@ -26,7 +26,7 @@ window.addEventListener('scroll', function() {
     for(let i = 0; i < tastiLog.length; i++ ) {
       tastiLog[i].classList.add('tasti-log-resize');
     }
-    buttonOutlet.classList.add('tasti-log-resize');
+    // buttonOutlet.classList.add('tasti-log-resize');
   } else {
     rowTreHeader.classList.remove('sfumata-scroll');
     mainRowDue.classList.remove('altezza-ridotta');
@@ -38,7 +38,7 @@ window.addEventListener('scroll', function() {
     for(let i = 0; i < tastiLog.length; i++ ) {
       tastiLog[i].classList.remove('tasti-log-resize');
     }
-    buttonOutlet.classList.remove('tasti-log-resize');
+    // buttonOutlet.classList.remove('tasti-log-resize');
   }
  
  

@@ -4,7 +4,7 @@
 }
 .footer {
     background-color: #ECECEC;
-    border-bottom: 1px solid #D8DBDF;
+    
 }
 
 .section-footer {
@@ -16,7 +16,9 @@
     padding-top: 40px;
     padding-bottom: 65px;
 }
-
+.margin-section-footer {
+    width: 100%;
+}
 .section-footer .colonnina-16 {
     width: 16%;
 }
@@ -24,21 +26,24 @@
     margin: 0px auto 0px;
     display: flex;
     justify-content: center;
-    max-width: 1500px;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    background-color: #343434;
 }
 .note-diritti p {
-    font-size: 14px;
+    font-size: 13.5px;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 0.02em;
 }
 .note-diritti a {
-    color: #222222;
+    color: #fff;
     text-decoration: none;
 }
 .note-diritti a:hover {
     text-decoration: underline;
-    color: #0088CC;
+    color: #fff;
 }    
 .section-footer ul {
     list-style-type: none;

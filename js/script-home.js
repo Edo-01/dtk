@@ -82,8 +82,32 @@ let images = new Array(
    
   }, 4000);
 
+  
 
 
 
-
- 
+  let tornaSu = document.querySelectorAll('.torna-su');
+  let section1Torna = document.querySelector('#section-1-torna')
+  
+  
+  
+  
+  
+  
+  
+  for(let i = 0; i < tornaSu.length; i++){
+      window.addEventListener('scroll', function() {
+    
+          if(window.pageYOffset > 450) {
+              tornaSu[i].classList.add('torna-su-big');
+          }  else {
+              tornaSu[i].classList.remove('torna-su-big');
+          }
+      
+      }) 
+      tornaSu[i].addEventListener('click', function() {
+       
+        window.scrollTo({top:0,left:0, behavior:'smooth'});
+      })
+  }
+  

@@ -136,7 +136,7 @@ valore20.addEventListener('click', function(e) {
     }
 })
 
-let tornaSu = document.querySelector('#torna-su');
+let tornaSu = document.querySelectorAll('.torna-su');
 let section2 = document.querySelector('#section-2')
 let bottoneScopriOfferta = document.querySelector('#button-scopri-offerta');
 
@@ -150,19 +150,21 @@ e.preventDefault();
 })    
 
 
-
-
-window.addEventListener('scroll', function() {
+for(let i = 0; i < tornaSu.length; i++){
+    window.addEventListener('scroll', function() {
   
-    if(window.pageYOffset > 1000) {
-        tornaSu.classList.add('torna-su-big');
-    }  else {
-        tornaSu.classList.remove('torna-su-big');
-    }
+        if(window.pageYOffset > 1000) {
+            tornaSu[i].classList.add('torna-su-big');
+        }  else {
+            tornaSu[i].classList.remove('torna-su-big');
+        }
+    
+    }) 
+    tornaSu[i].addEventListener('click', function() {
+        section2.scrollIntoView({behavior:'smooth'});
+    })
+}
 
-})   
+  
 
 
-tornaSu.addEventListener('click', function() {
-    section2.scrollIntoView({behavior:'smooth'});
-})
