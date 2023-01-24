@@ -392,6 +392,8 @@ font-family: Poppins;
 .button-outlet svg {
     fill: #fff;
     margin-right: 7px;
+    position: relative;
+    top: 5px;
     
 }
 
