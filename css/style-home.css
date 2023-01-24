@@ -68,7 +68,7 @@
     justify-content: center;
     align-items: flex-start;
     z-index:10000;
-    padding: 30px 33px;
+    padding: 20px 33px 25px;
     color: #2C333A;
     
 }
@@ -803,6 +803,10 @@ p.descrizione {
 .torna-su-big {
     width: 50px;
     transition: all 0.5s;
+}
+.colleg-outlet {
+    font-size: 16px!important;
+    font-weight: 500!important;
 }
 
 /* ----------------------------------------------media desk---------------------------------------------------------------- */

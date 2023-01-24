@@ -210,6 +210,20 @@ header {
     filter: drop-shadow(0px 2.5px 2px rgba(0, 0, 0, 0.15));
     transition: background-color 0.5s;
 }
+
+.login-registrati {
+    background-color: #3D74A6!important;
+    border: 1px solid #3D74A6!important;
+    color: #fff!important;
+}
+.login-registrati  a{
+    
+    color: #fff!important;
+}
+
+
+
+
 .main-row-2 .col-33 > div img {
     margin-right: 5px;
    
@@ -225,7 +239,7 @@ background: #FFFFFF;
 border: 1px solid #CACACA;
 border-radius: 20px;
 height: 43px;
-font-weight: 400;
+font-weight: 500;
 font-size: 15px;
 
 width: 370px;
@@ -240,6 +254,13 @@ padding-left: 60px;
     border: 2px solid #0088CC;
     
 }
+.main-row-2 .col-33 input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #2C333A;
+    opacity: 1; /* Firefox */
+    font-weight: 500;
+font-size: 14px;
+font-family: Poppins;
+  }
 
 .ricerca-focus {
     width: 500px!important;
@@ -371,6 +392,7 @@ padding-left: 60px;
 .button-outlet svg {
     fill: #fff;
     margin-right: 7px;
+    
 }
 
 
