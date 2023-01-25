@@ -2,7 +2,7 @@
 
 
 .colorata {
-    color: #0088CC!important;
+    color: #3D74A6!important;
 }
 .chiudi-log {
     position: absolute;
@@ -133,7 +133,7 @@
 .base-ricerca-avanzata form > button {
     padding: 6px 40px;
     font-size: 13px;
-    background-color: #3D74A6; 
+    background-color: #797979; 
 }
 
 
@@ -144,7 +144,7 @@
     background-color: #0071AA;
 }
 .base-ricerca-avanzata form > button:hover{
-    background-color: #4F8CC3;
+    background-color: #4e4e4e;
 }
 
 
@@ -503,7 +503,7 @@ p.descrizione {
     max-width: 1350px;
     width: 100%;
     margin: 10px auto 0px;
-    padding: 20px 20px;
+    padding: 20px 0px;
     background-color: rgb(246, 246, 246);
     border-radius: 20px;
     border: 1px solid #D1D1D1;
@@ -713,14 +713,14 @@ p.descrizione {
     padding-bottom: 10px;
 }
 .section-6 .col50 p.news {
-    font-size: 23px;
+    font-size: 22px;
     color: #222222;
 }   
 
 .section-6 .input-email {
    
         background: #FFFFFF;
-        border: 2px solid #CACACA;
+        border: 1px solid #CACACA;
         border-radius: 20px;
         height: 39px;
         font-weight: 400;
@@ -861,7 +861,7 @@ p.descrizione {
     }
     .section-4 {
         
-        padding: 50px 0px;
+        padding: 20px 0px;
     }
     .section-5 .col-22 {
         width: 22%;
@@ -929,18 +929,18 @@ p.descrizione {
             font-size: 39px;
             line-height: 45px;
             padding-bottom: 20px;
-            color: #34495E;
-            font-weight: lighter;
+            color: #fff;
+            font-weight: 300;
           }
         .container-2 .slide p {
             padding-bottom: 65px;
             max-width: 100%;
             font-size: 18px;
-            color: #34495E;
+            color: #fff;
             max-width: 500px;
           }
           .container-2 p.blu {
-            color: #0088CC;
+            color: #FFF;
         }
         .container-2 .slide button {
             margin-bottom: 20px;
@@ -974,20 +974,20 @@ p.descrizione {
         }
         #mostra-ricerca-av {
             cursor: pointer;
-            border: 1px solid #00CB6A;
-            padding: 13px;
+            border: 1px solid #018762;
+            padding: 10px;
             border-radius: 50%;
-            width: 55px;
-            background-color: #00CB6A;
+            width: 42px;
+            background-color: #018762;
             margin-right: 15px;
         }
         .mostra-ricerca-av {
             cursor: pointer;
-            border: 1px solid #00CB6A;
-            padding: 13px;
+            border: 1px solid #018762;
+            padding: 10px;
             border-radius: 50%;
-            width: 55px;
-            background-color: #00CB6A;
+            width: 42px;
+            background-color: #018762;
             margin-right: 15px;
         }
 
@@ -1009,8 +1009,8 @@ p.descrizione {
             border-width: 0px 1px 0px 0px;
         }
         .section-2 .container-25 h2 {
-            font-size: 39px;
-            color: #0088CC;
+            font-size: 36px;
+            color: #3D74A6;
             font-weight: bolder;
             text-align: center;
         }
@@ -1019,11 +1019,11 @@ p.descrizione {
             font-weight: lighter;
         }
         .section-2 .container-25 h2.dark {
-            color: #34495E;
+            color: #3D74A6;
         }
         .section-2 .container-25 h3 {
             color: #2C333A;
-            font-weight: lighter;
+            font-weight: 300;
             text-align: center;
             font-size: 18px;
         }
@@ -1046,7 +1046,7 @@ p.descrizione {
         font-size: 45px;
     }
     .section-4 {
-        padding: 50px 0px;
+        padding: 0px 0px;
         flex-direction: column;
     }
     .section-4 .container-50 {
@@ -1149,19 +1149,20 @@ p.descrizione {
         font-size: 39px;
         line-height: 45px;
         padding-bottom: 20px;
-        color: #34495E;
+        color: #fff;
         
       }
     .container-2 .slide p {
         padding-bottom: 65px;
         max-width: 100%;
-        font-size: 18px;
-        color: #34495E;
+        font-size: 17px;
+        color: #fff;
         max-width: 500px;
       }
       .container-2 p.blu {
-        color: #0088CC;
+        color: #fff;
         padding-bottom: 30px;
+        font-size: 16px;
     }
     .container-2 .slide button {
         margin-bottom: 20px;
@@ -1204,11 +1205,11 @@ p.descrizione {
     }
     #mostra-ricerca-av {
         cursor: pointer;
-        border: 1px solid #00CB6A;
-        padding: 11px;
+        border: 1px solid #018762;
+        padding: 10px;
         border-radius: 50%;
-        width: 45px;
-        background-color: #00CB6A;
+        width: 40px;
+        background-color: #018762;
         margin-right: 15px;
     }
    .section-2 {
@@ -1228,8 +1229,8 @@ p.descrizione {
         border-width: 0px 1px 0px 0px;
     }
     .section-2 .container-25 h2 {
-        font-size: 39px;
-        color: #0088CC;
+        font-size: 27px;
+        color: #3D74A6;
         font-weight: bolder;
         text-align: center;
         letter-spacing: -1.5px;
@@ -1239,14 +1240,15 @@ p.descrizione {
         font-weight: lighter;
     }
     .section-2 .container-25 h2.dark {
-        color: #34495E;
+        color: #3D74A6;
     }
     .section-2 .container-25 h3 {
         color: #2C333A;
         font-weight: 300;
         text-align: center;
-        font-size: 18px;
+        font-size: 17px;
         max-width: 120px;
+        line-height: 23px;
     }
     .section-2 {
         padding: 30px 10px;
@@ -1288,7 +1290,7 @@ p.descrizione {
         display: none;
     }
     .section-4 {
-        padding: 50px 0px;
+        padding: 20px 0px 0px;
         flex-direction: column;
     }
     .section-4 .container-50 {
@@ -1317,7 +1319,7 @@ p.descrizione {
         padding-left: 10px;
     }
     .section-4 .container-50 h2 {
-        font-size: 35px;
+        font-size: 27px;
     }
     .section-4 .container-50 .par-big {
         font-size: 20px;
@@ -1429,7 +1431,7 @@ p.descrizione {
         top: 10px;
         left: 10px;
         border-radius: 10px;
-        background-color: #0088CC;
+        background-color: #3D74A6;
         height: 25px;
         text-align: center;
         display: flex;
@@ -1439,11 +1441,11 @@ p.descrizione {
     
     .mostra-ricerca-av {
         cursor: pointer;
-        border: 1px solid #00CB6A;
-        padding: 11px;
+        border: 1px solid #018762;
+        padding: 10px;
         border-radius: 50%;
-        width: 45px;
-        background-color: #00CB6A;
+        width: 40px;
+        background-color: #018762;
         margin-right: 15px;
     }
     .section-3-a {

@@ -196,13 +196,13 @@ header {
 }
 .main-row-2 .col-33 .login {
     margin-left: 15px;
-    border: 1px solid #CACACA;
+    border: 0px solid #CACACA;
     padding: 4px 10px;
     border-radius: 20px;
     background-color: #fff;
     transition: background-color 0.5s;
     color: #2C333A;
-    height: 43px;
+    height: 40px;
     transition: all 0.3s;
 }
 .main-row-2 .col-33 .login:hover {
@@ -210,15 +210,20 @@ header {
     filter: drop-shadow(0px 2.5px 2px rgba(0, 0, 0, 0.15));
     transition: background-color 0.5s;
 }
-
+.main-row-2 .col-33 .login svg {
+    margin-right: 5px;
+}
 .login-registrati {
     background-color: #3D74A6!important;
     border: 1px solid #3D74A6!important;
     color: #fff!important;
+    padding: 4px 25px!important;
+
 }
-.login-registrati  a{
-    
+.login-registrati a{
+    font-weight: 300!important;
     color: #fff!important;
+    font-size: 15px!important;
 }
 
 
@@ -238,7 +243,7 @@ color:#2C333A;
 background: #FFFFFF;
 border: 1px solid #CACACA;
 border-radius: 20px;
-height: 43px;
+height: 40px;
 font-weight: 500;
 font-size: 15px;
 
@@ -548,14 +553,14 @@ text-decoration: none;
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
     border-radius: 12px;
-    background-color: #0088CC;
+    background-color: #3D74A6;
     color: #FFFFFF;
     font-weight: 500;
     border: 0px solid #BABABA;
     cursor: pointer;
 }
 .base-modulo-login form > button:hover {
-    background-color: #0071AA;;
+    background-color: #4F8CC3;
 }
 .base-modulo-login p {
     font-size: 15px;
@@ -567,7 +572,7 @@ text-decoration: none;
     font-size: 15px;
 }
 .base-modulo-login p > a:hover {
-    color: #0088CC;
+    color: #3D74A6;
 }
 .sfondo-container-login {
     background: rgba(69, 69, 69, 0.5);
