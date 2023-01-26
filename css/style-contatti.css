@@ -248,4 +248,12 @@ margin-top: 40px!important;
             padding-left: 10px!important;
         padding-right: 10px!important;
         }
+        .font-small {
+            display: flex!important;
+            flex-direction: column!important;
+        }
+        .due-colonne {
+            width: 100%!important;
+            align-self: flex-start!important;
+        }
 }    
