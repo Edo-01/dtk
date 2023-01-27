@@ -35,7 +35,7 @@
     color: #2C333A!important;
     font-weight: 400!important;
 }
-.titolo-scuro::before {
+.titolo-contatti::before {
     content: url(../img/ico-contatti-pag.svg);
     margin-right: 8px;
     position: relative;

@@ -6,7 +6,7 @@
     align-items: center;
     max-width: 1350px;
     width: 100%;
-    margin: 10px auto 0px;
+    margin: 0px auto 0px;
     
 }
 .section-1 .container-1 {
@@ -37,14 +37,14 @@
     border: 1px solid rgb(214, 214, 214);
     margin-bottom: 40px;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
    
 }
 .row-titolo {
     background-color:rgb(230, 230, 230);
     padding:10px 20px;
     width: 100%;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 .container-domanda:last-of-type {
     border-bottom: 0px solid rgb(214, 214, 214) ;
@@ -91,8 +91,8 @@
 }
 .sotto-titolo {
     color: #2C333A;
-    font-size: 22px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 400;
 }
 .container-faq {
     width: 100%;
@@ -113,19 +113,20 @@
 .container-2 .col25 p,
 .container-2 .col75 p {
     color: #5D7079;
+    font-size: 14px!important;
 }
 .domanda-paragrafo {
     font-weight: 500!important;
+    font-size: 14px!important;
     
     
     
 }
-.par-grande {
-    color: #2C333A!important;
-    font-size: 22px!important;
-    font-weight: 500!important;
-    margin-right: 30px!important;
+.container-2 .col75 h4 {
+   font-size: 15px;
+   font-weight: 500;
 }
+
 .container-assistenza,
 .container-contatti {
     width: 100%;
@@ -138,8 +139,8 @@
 
 .container-assistenza img,
 .container-contatti img {
-    width: 90px;
-    margin-bottom: 20px;
+    width: 70px;
+    margin-bottom: 0px;
     transition: all 0.3s;
 }
 .container-assistenza {
@@ -152,7 +153,7 @@
 }
 .num-tel {
     margin-top: 15px;
-    color:#0088CC;
+    color:#3D74A6;
     font-weight: 500;
     text-decoration: none;
 }
@@ -173,10 +174,10 @@
     
     margin-top: 15px;
     padding: 9px 40px;
-    font-size: 17px;
+    font-size: 14px;
     
-    border-radius: 12px;
-    background-color: #0088CC;
+    border-radius: 20px;
+    background-color: #3D74A6;
   
     border: 0px solid #BABABA;
     cursor: pointer;
@@ -188,17 +189,17 @@
     text-decoration: none;
 }
 .bottone-assistenza:hover {
-    background-color: #0071AA;
+    background-color: #4F8CC3;
 }
 
 .bottone-contatti {
     margin-left: 30px;
     
     padding: 9px 40px;
-    font-size: 17px;
+    font-size: 14px;
     
-    border-radius: 12px;
-    background-color: #0088CC;
+    border-radius: 20px;
+    background-color: #3D74A6;
   
     border: 0px solid #BABABA;
     cursor: pointer;
@@ -210,7 +211,7 @@
     text-decoration: none;
 }
 .bottone-contatti:hover {
-    background-color: #0071AA;
+    background-color: #4F8CC3;
 }
 .bottone-contatti a {
     color: #fff;
@@ -224,12 +225,42 @@
     align-items: center;
     padding: 30px;
     background-color: #0088CC15;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1px solid rgb(214, 214, 214) ;
     margin-bottom: 100px;
 }
 
-
+.back-color {
+    background: rgba(79, 140, 196, 0.4);
+}
+.titolo-scuro {
+    font-size: 27px!important;
+    color: #2C333A!important;
+    font-weight: 400!important;
+}
+.section-1 .stretto {
+    padding: 0px 0px!important;
+    display: flex!important;
+    align-items: center!important;
+}
+.altezza-assistenza {
+    padding: 15px 0px!important;
+}
+.titolo-assistenza::before {
+    content: url(../img/ico-ass-e-supp.svg);
+    margin-right: 8px;
+    position: relative;
+    top: 3px;
+}
+.margin-ass {
+    margin-top: 15px;
+}
+.par-grande {
+    color: #2C333A!important;
+    font-size: 22px!important;
+    font-weight: 500!important;
+    margin-right: 30px!important;
+}
 /* ----------------------------------------------media desk---------------------------------------------------------------- */
 @media only screen and (min-width: 1281px) {
     .container-2 .col25 {

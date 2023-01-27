@@ -15,7 +15,7 @@
 }
 .titolo {
     font-size: 40px;
-    color: #0088CC;
+    color: #3D74A6;
     font-weight: bolder;
     line-height: 46px;
     text-align: center;
@@ -23,17 +23,18 @@
 }
 .p-big {
     font-weight: 500;
-font-size: 19px;
+font-size: 17px;
 color: #2C333A;
 text-align: center;
 }
 .p-standard {
     color: #515151;
     text-align: center;
+    font-size: 14px;
 }
 .estensione {
     max-width: 500px!important;
-}
+} 
 .no-altezza {
     min-height:0px;
     margin-bottom: 100px;
@@ -44,7 +45,7 @@ text-align: center;
 .modulo-candidatura {
     font-weight: 400!important;
 font-size: 22px!important;
-color: #0088CC!important;
+color: #3D74A6!important;
 
 }
 
@@ -55,7 +56,7 @@ color: #0088CC!important;
     display: block!important;
     padding: 10px 25px!important;
     border-radius: 12px!important;
-    background-color: #0088CC!important;
+    background-color: #3D74A6!important;
     color: #fff!important;
     text-decoration: none!important;
     cursor: pointer;
@@ -68,7 +69,7 @@ color: #0088CC!important;
     margin-bottom: 20px!important;
 }
 .invia-candidatura:hover {
-    background-color: #0071AA!important;
+    background-color: #4F8CC3!important;
 }
 
 @media only screen and (max-width: 700px) {
@@ -85,7 +86,7 @@ color: #0088CC!important;
 .modulo-candidatura {
     font-weight: 400!important;
 font-size: 20px!important;
-color: #0088CC!important;
+color: #3D74A6!important;
 
 }
 }    

@@ -593,7 +593,7 @@ text-decoration: none;
 
 /* ----------------  @MEDIA  --------------------  */
 
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1101px) {
     .main-container-mobile,
     .dropdown-mobile-overlay,
     #sfondo-menu-mob {
@@ -606,7 +606,7 @@ text-decoration: none;
 
 
 
-@media only screen and (min-width: 1280px) and (max-width: 1430px){
+@media only screen and (min-width: 1100px) and (max-width: 1430px){
     .row-full {
         display: none;
     }
@@ -615,9 +615,19 @@ text-decoration: none;
     }
 }
 
+
+@media only screen and (min-width: 1100px) and (max-width: 1280px){
+    .main-row-2 .col-33 input {
+        width: 250px;
+    }
+}
+
+
+
+
     
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1100px) {
     .dropdown-desk,
     .row-full,
     .row-full-2,

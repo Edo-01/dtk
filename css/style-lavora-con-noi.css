@@ -6,7 +6,8 @@
     align-items: center;
     max-width: 1350px;
     width: 100%;
-    margin: 10px auto 0px;
+    margin: 0px auto 0px;
+    padding: 15px 0px;
 }
 .section-1 .container-1 {
     width: 100%;
@@ -25,12 +26,17 @@
     font-size: 40px;
     color: #0088CC;
     font-weight: bolder;
-    margin-bottom: 25px;
+    
 } 
+.titolo-scuro {
+    font-size: 27px!important;
+    color: #2C333A!important;
+    font-weight: 400!important;
+}
 .col50 {
     width: 50%;
     background-color: #ECECEC;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1px solid #D1D1D1;
     padding: 20px 30px 20px 20px;
 }
@@ -45,15 +51,16 @@
     display: flex;
     justify-content:flex-start ;
     align-items: center;
+    margin-bottom: 15px;
     
 }
 .row-titolo img {
-    margin-right: 0px;
+    margin-right: 25px;
 }
 .row-bottoni {
     
     
-    margin-left: 85px;
+    margin-left: 55px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -87,11 +94,11 @@ color: #2C333A;
     font-size: 16px;
     
     
-    color: #0088CC;
+    color: #3D74A6;
 }
 .p-big {
     font-weight: 500;
-font-size: 19px;
+font-size: 17px;
 
 
 
@@ -100,6 +107,7 @@ color: #2C333A;
 }
 .p-standard {
     color: #515151;
+    font-size: 14px;
 }
 .spazio {
     margin-top: 23px;
@@ -107,6 +115,20 @@ color: #2C333A;
 
 .container-1 .p-big {
     margin-bottom: 10px;
+}
+.back-color {
+    background: rgba(79, 140, 196, 0.4);
+}
+.section-1 .stretto {
+    padding: 0px 0px!important;
+    display: flex!important;
+    align-items: center!important;
+}
+.titolo-lavora-con-noi::before {
+    content: url(../img/ico-lavora-con-noi.svg);
+    margin-right: 8px;
+    position: relative;
+    top: 3px;
 }
 
 /* ----------------------------------------------media desk---------------------------------------------------------------- */
