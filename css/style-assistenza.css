@@ -41,7 +41,7 @@
    
 }
 .row-titolo {
-    background-color:rgb(230, 230, 230);
+    background-color:#f6f6f6;
     padding:10px 20px;
     width: 100%;
     border-radius: 10px 10px 0px 0px;
@@ -108,7 +108,7 @@
 }
 .container-2 .col25 h3,
 .container-2 .col75 h4 {
-    color: #2C333A;
+    color: rgb(52, 73, 94);
 }
 .container-2 .col25 p,
 .container-2 .col75 p {

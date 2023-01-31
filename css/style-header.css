@@ -429,7 +429,7 @@ font-family: Poppins;
 }
 .dop-col-25 p {
     color: #555A5F;
-    font-size: 15px;
+    font-size: 14px;
 }
 .dop-col-25 h3 {
     font-size: 20px;
@@ -590,7 +590,10 @@ text-decoration: none;
 .reg-preselect {
     background-color: #D6E6EF!important;
 }
-
+.colleg-outlet {
+    font-size: 16px!important;
+    font-weight: 500!important;
+}
 /* ----------------  @MEDIA  --------------------  */
 
 @media only screen and (min-width: 1101px) {

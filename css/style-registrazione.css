@@ -1,6 +1,7 @@
 
 .riga-div {
     border-bottom: 1px solid #cacaca;
+    background: rgba(79, 140, 196, 0.4);
 }
 .section-1 {
     display: flex;
@@ -12,6 +13,10 @@
    padding: 15px 0px;
    
 }
+.altezza-ridotta-registrazione {
+    padding: 7px 0px!important;
+}
+
 .section-1 .col-50 {
     width:100%;
 }
@@ -62,8 +67,11 @@
 }
 
 .section-1 .col-50 h2 {
-    color: #34495E;
-    font-size: 26px;
+    
+    
+    font-size: 27px ;
+    color: rgb(44, 51, 58);
+    font-weight: 400 ;
 }
 
 .section-2 {
@@ -106,7 +114,7 @@
 .base-modulo .titolo-modulo {
     margin-bottom: 15px;
     color: #34495E;
-    font-size: 26px;
+    font-size: 19px;
 }
 
 .base-modulo label {
@@ -122,7 +130,7 @@
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     border-radius: 12px;
-    border: 2px solid #E9E9E9;
+    border: 1px solid #cacaca;
     background-color: #FFF;
     color: #717171 
 }
@@ -183,7 +191,7 @@
     display: block;
     padding: 10px 25px;
     border-radius: 20px;
-    background-color: #0088CC;
+    background-color: #3D74A6;
     color: #fff;
     text-decoration: none;
     margin: 10px;
@@ -191,17 +199,17 @@
 }
 
 .container-avanti-indietro a:hover {
-    background-color: #005d8b;
+    background-color: #4F8CC3;
 }
 
 .container-avanti-indietro a.back:hover {
-    background-color: #005d8b;
+    background-color: #4F8CC3;
 }
 
 .container-avanti-indietro a.back {
-    background-color: #0088CC;
+    background-color: #3D74A6;
     color: #fff;
-    outline: 1px solid #0088CC;
+    outline: 1px solid #3D74A6;
 }
 .invia-registrazione {
     min-width: 180px;
@@ -209,19 +217,19 @@
     display: block;
     padding: 10px 25px;
     border-radius: 20px;
-    background-color: #00CB6A;
+    background-color: #018762;
     color: #fff;
     text-decoration: none;
     margin: 10px;
-    border: 0px solid #00CB6A;
-    outline: 0px solid #00CB6A;
+    border: 0px solid #018762;
+    outline: 0px solid #018762;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
 }
 .invia-registrazione:hover {
-    background-color: #008042;
+    background-color: #004A36;
 }
 
 
@@ -232,7 +240,7 @@ textarea {
     font-family: 'Poppins';
     padding: 10px 15px;
     border-radius: 10px;
-    border: 2px solid #E9E9E9;
+    border: 1px solid #cacaca;
     height: 45px;
 }
 .input-file {
@@ -284,7 +292,12 @@ textarea {
     color: #0088CC!important;
 }
 
-
+.titolo-registrazione::before {
+    content: url(../img/ico-registrazione.svg);
+    margin-right: 8px;
+    position: relative;
+    top: 3px;
+}
 
 
     /* outline: none;
