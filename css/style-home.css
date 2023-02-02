@@ -316,7 +316,7 @@
     color: #2C333A;
     font-size: 27px;
     font-weight: 400;
-    text-align: left;
+    text-align: center;
 }
 
 .section-3 {
@@ -830,12 +830,16 @@ display: flex;
 }
 .contenitore-bottoni button:first-of-type {
     margin-right: 10px;
+    background-color: #018762;
 }
 
 .contenitore-bottoni button:hover {
     background-color: #4e4e4e;
 }
-
+.contenitore-bottoni button:first-of-type:hover {
+    margin-right: 10px;
+    background-color: #004A36;
+}
 /* ----------------------------------------------media desk---------------------------------------------------------------- */
 
 
@@ -1515,6 +1519,7 @@ display: flex;
     }
     .section-3-a .container-50 > h2 {
         font-size: 27px;
+        text-align:left ;
         
     }
     .par-log {

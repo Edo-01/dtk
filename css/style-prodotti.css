@@ -7,7 +7,7 @@
     width: 100%;
     margin: 10px auto 0px;
     padding-top: 25px;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 }
 .col-big{
    
@@ -95,7 +95,7 @@ color: #5D7079;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 0px;
     border: 1px solid #D1D1D1;
 }
 
@@ -167,24 +167,24 @@ background-color: #4F8CC3;
     font-size: 13px;
     padding: 4px 4px ;
     text-decoration: none;
-    color: #353535;
+    color: #7c7c7c;
     width: 20%;
     text-align: center;
 }
 
 .active {
-    border: 1px solid #353535!important;
+    border: 1px solid #7c7c7c!important;
     
     color: #fff !important;
-    background-color: #353535;
+    background-color: #7c7c7c;
 }
 .container-switch a:hover {
     border: 1px solid #fff;
     background-color:#E8E8E8 ;
 }
 .active:hover {
-    border: 1px solid #353535!important;
-    background-color:#353535!important ;
+    border: 1px solid #7c7c7c!important;
+    background-color:#7c7c7c!important ;
 }
 .pre-container {
     width: 100%;
@@ -208,6 +208,34 @@ background-color: #4F8CC3;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+}
+
+.section-3 {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    max-width: 1350px;
+    width: 100%;
+    margin: 10px auto 10px;
+    background-image: url('../img/banner-chi-siamo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 90px 40px;
+}
+.section-3 .container-3 {
+    width: 100%;
+background: rgba(61, 116, 166, 0.8);
+    padding: 45px;
+}    
+
+.titolo-sezione-3 {
+    font-size: 22px;
+    font-weight: 400;
+    
+  
+    color: #fff;
+    
 }
 
 
