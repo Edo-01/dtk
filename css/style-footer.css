@@ -3,7 +3,11 @@
     padding: 0px 40px;
 }
 .footer {
-    background-color: #ECECEC;
+    background-color: #343434;
+    background-image: url('../img/back-foot.png');
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
     
 }
 
@@ -13,8 +17,8 @@
     justify-content: space-between;
     max-width: 1350px;
     width: 100%;
-    padding-top: 40px;
-    padding-bottom: 65px;
+    padding-top: 50px;
+    padding-bottom: 35px;
 }
 .margin-section-footer {
     width: 100%;
@@ -29,13 +33,14 @@
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #343434;
+   
 }
 .note-diritti p {
-    font-size: 13.5px;
+    font-size: 12.5px;
     color: #fff;
     font-weight: 200;
     letter-spacing: 0.02em;
+    
 }
 .note-diritti a {
     color: #fff;
@@ -52,11 +57,14 @@
 
 .section-footer .colonnina-16 h3 {
     padding-bottom: 20px;
-    color: #222222;
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgb(189, 189, 189);
 }
 .section-footer .colonnina-16 a {
     text-decoration: none;
-    color: #222222;
+    color: #fff;
 }
 .section-footer .colonnina-16 a:hover {
     text-decoration: underline;
@@ -67,9 +75,42 @@
 }
 .section-footer p,
 .section-footer a {
-    font-size: 15px;
+    font-size: 13.5px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 23px;
 }
- 
+.section-footer p strong {
+    text-transform: uppercase;
+    color: rgb(189, 189, 189);
+    font-weight: 300;
+    font-size: 13.5px;
+    margin-right: 7px;
+}
+ .linea-oriz {
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.15), transparent);
+    border: 0;
+    height: 1px;
+    box-sizing: content-box;
+ }
+ .det-email::before{
+    content: url('../img/ico-footer-mail.svg');
+    position: relative;
+    top: 1px;
+    margin-right: 5px;
+ }
+ .det-tel::before{
+    content: url('../img/ico-footer-teò.svg');
+    position: relative;
+    top: 1px;
+    margin-right: 5px;
+ }
+ .det-orari::before{
+    content: url('../img/ico-footer-orologio.svg');
+    position: relative;
+    top: 1px;
+    margin-right: 5px;
+ }
 @media only screen and (max-width: 1280px){
     .section-footer {
         

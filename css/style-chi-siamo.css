@@ -1,5 +1,21 @@
-
-
+.section-00 {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    max-width: 1440px!important;
+    width: 100%;
+    padding: 15px 0px;
+}
+.color-blue {
+    background: rgba(79, 140, 196, 0.4);
+    display: flex;
+    justify-content: center!important;
+}
+.titolo-scuro {
+    font-size: 27px!important;
+    color: #2C333A!important;
+    font-weight: 400!important;
+}
 .section-1 {
     display: flex;
     justify-content:flex-start;
@@ -169,7 +185,7 @@ padding-bottom: 50px;
     
 }
 .titolo-chi-siamo::before {
-    content: url(../img/logo-bianco.png);
+    content: url(../img/logo-black.png);
     margin-right: 7px;
     position: relative;
     top: 2px;
