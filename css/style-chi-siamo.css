@@ -96,6 +96,7 @@ background: rgba(61, 116, 166, 0.8);
 
 .section-2 .container-2 .col-50 {
     width: 50%;
+    background-color: #F6F6F6;
 }
 .back-img {
     background-image: url('../img/chi-siamo-2.png');
@@ -124,7 +125,7 @@ padding-bottom: 20px;
     color: #5D7079;
 }
 .col-testo {
-    border: 1px solid #D3D3D3;
+    
     padding: 25px 45px 35px;
 }
 
@@ -136,7 +137,7 @@ padding-top: 50px;
 padding-bottom: 50px;
 }
 
-
+/* 
 .title-missione::before {
     content: url(../img/ico-missione.svg);
     margin-right: 12px;
@@ -149,7 +150,7 @@ padding-bottom: 50px;
     margin-right: 12px;
     position: relative;
     top: 3px;
-}
+} */
 
 .tasto-informazioni a {
     color: #fff;
