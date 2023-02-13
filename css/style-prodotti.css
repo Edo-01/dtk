@@ -1,0 +1,325 @@
+.section-1350 {
+   
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1350px;
+    width: 100%;
+    margin: 10px auto 0px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+.col-big{
+   
+    width: 64%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-right: 100px;
+}
+
+.col-small{
+   padding-top: 26px;
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}    
+
+
+.col-big h3 {
+font-weight: 400;
+font-size: 27px;
+line-height: 22px;
+color: #2C333A;
+}
+
+.col-big h2 {
+    font-weight: 400;
+    font-size: 22px;
+    color: #2C333A;
+padding-bottom: 25px;
+
+}
+
+
+.col-big > p {
+    font-weight: 400;
+font-size: 14px;
+line-height: 25px;
+padding-bottom: 25px;
+color: #5D7079;
+}
+
+.container-bottoni {
+    padding-bottom: 40px;
+}
+
+.container-bottoni a {
+   
+    
+   
+    
+  
+  
+   
+   
+  
+   text-decoration: none;
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 14px;
+    color: #2C333A;
+   
+}
+.container-bottoni a:hover {
+    text-decoration:underline;
+}
+
+.container-bottoni a::before {
+    content: url(../img/ico-tasto-catalogo.svg);
+    margin-right: 8px;
+    position: relative;
+    top: 3px;
+}
+
+
+.container-testo { 
+    width: 50%;
+    padding:10px 25px 25px;
+    background-color: #ECECEC;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 0px;
+    border: 1px solid #D1D1D1;
+}
+
+.container-testo p {
+    color: #2C333A!important;
+    font-size: 14px;
+    line-height: 25px;
+}
+.container-testo h4 {
+    font-weight: 400;
+font-size: 22px;
+color: #2C333A;
+padding-bottom: 15px;
+}
+
+.primo-titolo::before {
+    content: url(../img/ico-posizioni-aperte.svg);
+    margin-right: 8px;
+    position: relative;
+    top: 3px;
+}
+.secondo-titolo::before {
+    content: url(../img/ico-prezzi-competitivi.svg);
+    margin-right: 8px;
+    position: relative;
+    top: 3px;
+}
+.container-testo img {
+    padding-bottom: 15px;
+}
+
+.container-testo:first-child {
+   background: rgba(79, 140, 196, 0.4);
+}
+
+.col-small img {
+    width: 100%;
+}
+
+.bott-reg {
+    color: #fff;
+    font-weight: 400!important;
+    padding: 9px 40px;
+    font-size: 14px!important;
+    border-radius: 20px;
+    background-color: #3D74A6;
+    border: 0px solid #BABABA;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.bott-reg:hover {
+background-color: #4F8CC3;
+}
+.container-switch {
+    border: 1px solid #a7a7a7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    
+    margin-bottom: 40px;
+}
+
+.container-switch a {
+    border: 0px solid #fff;
+    border-radius: 8px;
+    font-size: 13px;
+    padding: 4px 4px ;
+    text-decoration: none;
+    color: #7c7c7c;
+    width: 20%;
+    text-align: center;
+}
+
+.active {
+    border: 1px solid #7c7c7c!important;
+    
+    color: #fff !important;
+    background-color: #7c7c7c;
+}
+.container-switch a:hover {
+    border: 1px solid #fff;
+    background-color:#E8E8E8 ;
+}
+.active:hover {
+    border: 1px solid #7c7c7c!important;
+    background-color:#7c7c7c!important ;
+}
+.pre-container {
+    width: 100%;
+   
+}
+
+
+
+
+ 
+.row-line {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.sez-1-col100 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.section-3 {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    max-width: 1350px;
+    width: 100%;
+    margin: 10px auto 10px;
+    background-image: url('../img/banner-chi-siamo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 90px 40px;
+}
+.section-3 .container-3 {
+    width: 100%;
+background: rgba(61, 116, 166, 0.8);
+    padding: 45px;
+}    
+
+.titolo-sezione-3 {
+    font-size: 22px;
+    font-weight: 400;
+    
+  
+    color: #fff;
+    
+}
+
+
+
+
+@media only screen and (min-width:1231px) {
+     
+    .col-small{
+   
+        position: sticky;
+        top: 170px;
+    }   
+}
+
+
+
+
+
+@media only screen and (max-width:1230px) and (min-width:1081px) {
+    .col-big{
+        width: 58%;
+    }
+    
+    .col-small{
+        width: 42%;
+    }    
+    .col-small{
+   
+        position: sticky;
+        top: 120px;
+    }  
+    
+}
+
+@media only screen and (max-width:1080px) {
+    .section-1350 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 25px;
+      
+    }
+    .col-big{
+        width: 100%;
+        padding: 0;
+    }
+    
+    .col-small{
+        width: 100%;
+        margin-bottom: 30px;
+        
+    }  
+    .container-switch {
+        width: 500px;
+        margin-bottom: 0px;
+    }
+    .pre-container {
+        width: 100%;
+        overflow: scroll;
+        margin-bottom: 25px;
+    }
+    .col-small img {
+        width: 100%;
+        max-width: 500px;
+    }
+    .container-bottoni {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+
+    }
+    .container-bottoni a:first-of-type{
+        margin-bottom: 15px;
+    }
+    
+
+.row-line {
+flex-direction: column;
+}
+.container-testo {
+width: 100%;
+}
+}
+
+
+

@@ -1,0 +1,92 @@
+.section-1 {
+    
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1350px;
+    width: 100%;
+    margin: 10px auto 0px;
+}
+.section-1 .container-1 {
+    width: 100%;
+    padding: 50px 0px 20px;
+    
+}
+.titolo {
+    font-size: 40px;
+    color: #3D74A6;
+    font-weight: bolder;
+    line-height: 46px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.p-big {
+    font-weight: 500;
+font-size: 17px;
+color: #2C333A;
+text-align: center;
+}
+.p-standard {
+    color: #515151;
+    text-align: center;
+    font-size: 14px;
+}
+.estensione {
+    max-width: 500px!important;
+} 
+.no-altezza {
+    min-height:0px;
+    margin-bottom: 100px;
+}
+.estensione input {
+    margin-bottom: 10px!important;
+}
+.modulo-candidatura {
+    font-weight: 400!important;
+font-size: 22px!important;
+color: #3D74A6!important;
+
+}
+
+.invia-candidatura {
+
+    min-width: 180px!important;
+    text-align: center!important;
+    display: block!important;
+    padding: 10px 25px!important;
+    border-radius: 12px!important;
+    background-color: #3D74A6!important;
+    color: #fff!important;
+    text-decoration: none!important;
+    cursor: pointer;
+   
+}
+.altezza-cella {
+    height: 85px;
+}
+.margin-sotto {
+    margin-bottom: 20px!important;
+}
+.invia-candidatura:hover {
+    background-color: #4F8CC3!important;
+}
+
+@media only screen and (max-width: 700px) {
+#titolo-seconda-colonna {
+    display: none;
+    
+}
+.base-modulo:last-of-type {
+    padding-top: 20px!important;
+}
+.base-modulo:first-of-type {
+    padding-bottom: 20px!important;
+}
+.modulo-candidatura {
+    font-weight: 400!important;
+font-size: 20px!important;
+color: #3D74A6!important;
+
+}
+}    

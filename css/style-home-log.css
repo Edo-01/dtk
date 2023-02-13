@@ -1,0 +1,199 @@
+.section-1 .container-2 .slide-outlet {
+    background-image: url(../img/slider-test.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row!important;
+    justify-content:space-around!important;
+    align-items: center!important;
+    padding: 20px 60px;
+  
+}
+.container-titolo {
+    padding: 40px;
+     background-color: #0088cc00!important;
+     border-radius: 10px;
+     position: relative;
+ }
+ .container-titolo h2 {
+     font-weight: 400;
+     font-size: 40px;
+     color: #fff;
+ }
+ .container-titolo p {
+     font-weight: 400;
+     font-size: 15px;
+     color: #fff;
+ }
+ .sfondo {
+    background-color: #0088ccce!important;
+ }
+ .larghezza50 {
+    width: 50%;
+    padding: 0px!important;
+ }
+ .larghezza25 {
+    width: 30%;
+    min-width: 350px!important;
+ }
+ .title-log {
+    font-size: 45px;
+    line-height: 50px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 300;
+ }
+ .par-log {
+   
+    max-width: 100% !important;
+    font-size: 19px!important;
+    
+ }
+ .container-bottoni div {
+    width: 100%!important;
+ }
+ 
+.button-slider {
+    justify-content: center;
+}
+.larghezza25 h2 {
+    line-height: 48px;
+}
+.novita {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    background-color: #0088CC;
+    height: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.novita p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+}
+
+/* ----------------------------------------------media notebook---------------------------------------------------------------- */
+
+
+@media only screen and (min-width: 1281px) and (max-width: 1420px){
+
+    .section-2 .container-2 {
+        padding: 15px 25px 10px!important;
+    }
+    }
+
+
+
+
+@media only screen and (min-width: 1090px) and (max-width: 1280px){
+
+    .section-2 .container-2 {
+        padding: 15px 20px 10px!important;
+    }
+    }
+
+/* ----------------------------------------------media tablet---------------------------------------------------------------- */
+@media only screen and (min-width: 701px) and (max-width: 1089px){
+    .form-ricerca {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .section-2 .container-2 {
+        padding: 20px;
+    }
+    .form-ricerca > div {
+        width: 100%;
+    }
+    .form-ricerca > div:last-of-type {
+        align-items: flex-start;
+    }
+    .form-ricerca button {
+        width: 100%;
+    }
+    .form-ricerca input, 
+    .form-ricerca select {
+        width: 100%;
+    }
+    .section-1 .container-2 {
+        width: 100%;
+        background-color: #F6F6F6;
+        align-self: center;
+        height: 70vh;
+
+    }
+    .section-1 .container-2 .slide-outlet {
+        display: flex;
+    flex-direction: column!important;
+    justify-content:space-around!important;
+    align-items: flex-start!important;
+    padding: 20px 30px;
+    }
+    .larghezza50 {
+        width: 100%;
+        max-width: 550px!important;
+        padding: 35px 5px!important;
+     }
+     .larghezza25 {
+        width: 100%;
+        max-width: 500px!important;
+        padding: 20px!important;
+     }
+     .larghezza25 h2 {
+        font-size: 29px;
+        line-height: 38px;
+     }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .novita {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border-radius: 10px;
+        background-color: #0088CC;
+        height: 25px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-1 .container-2 {
+        width: 100%;
+        background-color: #F6F6F6;
+        align-self: center;
+        height: 90vh;
+
+    }
+    .section-1 .container-2 .slide-outlet {
+        display: flex;
+    flex-direction: column!important;
+    justify-content:space-around!important;
+    align-items: flex-start!important;
+    padding: 20px 15px;
+    }
+    .larghezza50 {
+        width: 100%;
+        max-width: 480px;
+        padding: 35px 5px!important;
+     }
+     .larghezza25 {
+        width: 100%;
+        max-width: 480px;
+        padding: 20px!important;
+     }
+     .larghezza25 h2 {
+        font-size: 29px;
+        line-height: 38px;
+     }
+}    
