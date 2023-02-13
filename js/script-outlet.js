@@ -46,7 +46,7 @@ for(let i = 0; i < tastoDiminuisci.length; i++ ) {
     })
     
 } 
-
+ 
 
 
 
@@ -60,9 +60,9 @@ numeroMostrato.textContent = '5';
 
 
 
-for(let i = 0; i < schedaProdotto.length; i++) {
-    schedaProdotto[i].style.display = 'none';
-}
+// for(let i = 0; i < schedaProdotto.length; i++) {
+//     schedaProdotto[i].style.display = 'none';
+// }
 
 tendina.style.display = 'none';
 
