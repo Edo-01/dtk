@@ -102,6 +102,10 @@ margin-right: 10px;
 .info-disp p {
     margin-right: 4px;
 }
+.info-disp p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
 .info-disp img {
     width: 15px;
 }
@@ -138,7 +142,7 @@ margin-right: 10px;
     margin-right: 20px;
 }
 .prima-riga .sez-3 {
-    width: 22%;
+    width: 25%;
     
     display: flex;
     flex-direction: column;
@@ -169,6 +173,10 @@ color: #2C333A;
     font-size: 11.5px;
     letter-spacing: 0.01em;
     color: #717171;
+}
+.riga-cella-2 p:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 .riga-cella-testo-tre p {
     font-weight: 400;
@@ -330,12 +338,19 @@ margin-bottom: 13px;
 
 /* ----------------------------------------------media desk---------------------------------------------------------------- */
 @media only screen and (min-width: 1281px) {
-   
+   .prima-riga .sez-2 {
+padding-left: 30px;
+   }
 }
 
 /* ----------------------------------------------media notebook---------------------------------------------------------------- */
 @media only screen and (min-width: 1090px) and (max-width: 1280px){
-
+    .prima-riga .sez-3 {
+        width: 27%;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+    }
 }
 
 /* ----------------------------------------------media tablet---------------------------------------------------------------- */
@@ -441,17 +456,18 @@ display: none;
           }
           .sez-3 .colonna-1{
    
-    width: 60%;
+    width: 20%;
 }
 .sez-3 .colonna-2{
    
-    width: 40%;
+    width: 80%;
     display: flex;
     align-self: flex-end;
     justify-content: flex-end!important;
 }
 .dimensione {
     width: 100px!important;
+    
 }
 .uno {
     margin-bottom: -1px!important;

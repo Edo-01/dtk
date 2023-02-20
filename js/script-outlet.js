@@ -15,22 +15,23 @@ let numQuantita = document.querySelectorAll('#num-quantita');  // 1
 
 
 
+
 let numTotProdotti = document.querySelector('#tot-num-prodotti');
 numTotProdotti.textContent = `(${schedaProdotto.length})`;
 
 
-
+ 
 
 for(let i = 0; i < numQuantita.length; i++ ) {
-    numQuantita[i].textContent = 1;
+    numQuantita[i].value = 1;
 }
 
 
 
 for(let i = 0; i < tastoAumenta.length; i++ ) {
     tastoAumenta[i].addEventListener('click', function() {
-        if(numQuantita[i].textContent !== '100') {
-            numQuantita[i].textContent++;
+        if(numQuantita[i].value !== '100') {
+            numQuantita[i].value++;
             
         }
     })
@@ -39,8 +40,8 @@ for(let i = 0; i < tastoAumenta.length; i++ ) {
 
 for(let i = 0; i < tastoDiminuisci.length; i++ ) {
     tastoDiminuisci[i].addEventListener('click', function() {
-        if(numQuantita[i].textContent !== '1') {
-            numQuantita[i].textContent--;
+        if(numQuantita[i].value !== '1') {
+            numQuantita[i].value--;
             
         }
     })
@@ -144,27 +145,109 @@ let bottoneScopriOfferta = document.querySelector('#button-scopri-offerta');
 
 
 
-bottoneScopriOfferta.addEventListener('click', function(e) {
-e.preventDefault();
-    section2.scrollIntoView({behavior:'smooth'});
-})    
+// bottoneScopriOfferta.addEventListener('click', function(e) {
+// e.preventDefault();
+//     section2.scrollIntoView({behavior:'smooth'});
+// })    
 
 
-for(let i = 0; i < tornaSu.length; i++){
-    window.addEventListener('scroll', function() {
+// for(let i = 0; i < tornaSu.length; i++){
+//     window.addEventListener('scroll', function() {
   
-        if(window.pageYOffset > 1000) {
-            tornaSu[i].classList.add('torna-su-big');
-        }  else {
-            tornaSu[i].classList.remove('torna-su-big');
-        }
+//         if(window.pageYOffset > 1000) {
+//             tornaSu[i].classList.add('torna-su-big');
+//         }  else {
+//             tornaSu[i].classList.remove('torna-su-big');
+//         }
     
-    }) 
-    tornaSu[i].addEventListener('click', function() {
-        section2.scrollIntoView({behavior:'smooth'});
+//     }) 
+//     tornaSu[i].addEventListener('click', function() {
+//         section2.scrollIntoView({behavior:'smooth'});
+//     })
+// }
+
+  
+
+let sfondoPopUp = document.querySelector('.sfondo-popup-outlet');
+sfondoPopUp.style.display = 'none';
+
+let popUpInfo = document.querySelector('.popup-more-info');
+popUpInfo.style.display = 'none';
+
+let popUpkit = document.querySelector('.popup-articoli-kit');
+popUpkit.style.display = 'none';
+
+let popUpSconto = document.querySelector('.popup-sconto-scatola');
+popUpSconto.style.display = 'none';
+
+let bottonInfoDisp = document.querySelectorAll('.info-disp');
+let bottonArticoliKit = document.querySelectorAll('.articoli-kit');
+let bottonSconto = document.querySelectorAll('.sconto-scatola');
+
+for(let i = 0; i < bottonInfoDisp.length; i++){
+    bottonInfoDisp[i].addEventListener('click', function(e){
+        sfondoPopUp.removeAttribute('style');
+        popUpInfo.removeAttribute('style');
+        document.body.style.overflow = 'hidden';
+        e.stopPropagation();
+    })
+}
+for(let i = 0; i < bottonArticoliKit.length; i++){
+    bottonArticoliKit[i].addEventListener('click', function(e){
+        sfondoPopUp.removeAttribute('style');
+        popUpkit.removeAttribute('style');
+        document.body.style.overflow = 'hidden';
+        e.stopPropagation();
+    })
+}
+for(let i = 0; i < bottonSconto.length; i++){
+    bottonSconto[i].addEventListener('click', function(e){
+        sfondoPopUp.removeAttribute('style');
+        popUpSconto.removeAttribute('style');
+        document.body.style.overflow = 'hidden';
+        e.stopPropagation();
     })
 }
 
-  
+
+popUpInfo.addEventListener('click', function(e) {   // CREO EVENTO DI CLICK AL POPUP SOLAMENTE PER ESCLUDERE LA PROPAGAZIONE DELL EVENTO CLICK DI CHUSURA DEL BODY
+    e.stopPropagation();
+})
+popUpkit.addEventListener('click', function(e) {   // CREO EVENTO DI CLICK AL POPUP SOLAMENTE PER ESCLUDERE LA PROPAGAZIONE DELL EVENTO CLICK DI CHUSURA DEL BODY
+    e.stopPropagation();
+})
+popUpSconto.addEventListener('click', function(e) {   // CREO EVENTO DI CLICK AL POPUP SOLAMENTE PER ESCLUDERE LA PROPAGAZIONE DELL EVENTO CLICK DI CHUSURA DEL BODY
+    e.stopPropagation();
+})
 
 
+let chiudiPop = document.querySelectorAll('.chiudi-pop');
+
+for(let i = 0; i < chiudiPop.length; i++){
+    chiudiPop[i].addEventListener('click', function(){
+        
+        sfondoPopUp.style.display = 'none';
+        popUpInfo.style.display = 'none';
+        popUpkit.style.display = 'none';
+        popUpSconto.style.display = 'none';
+        document.body.removeAttribute('style');
+    })
+}
+
+
+document.body.addEventListener('click', function() {   // PER CHIUDERE IL POPUP
+    sfondoPopUp.style.display = 'none';
+    popUpInfo.style.display = 'none';
+    popUpkit.style.display = 'none';
+    popUpSconto.style.display = 'none';
+    document.body.removeAttribute('style');
+    
+})
+
+let avvisoDisponibile = document.querySelectorAll('.riga-cella-non-disponibile .riga-cella-2');
+
+for(let i = 0; i < avvisoDisponibile.length; i++){
+    avvisoDisponibile[i].addEventListener('click', function(e){
+      alert('Ti avviseremo non appena il prodotto sarà nuovamente disponibile');
+    })
+}
