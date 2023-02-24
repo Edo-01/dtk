@@ -1,3 +1,11 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+{
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+
 .section-1,
 .section-2,
 .section-3 {
@@ -585,7 +593,7 @@ p.descrizione {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 20px;
+    padding-right: 11px;
 }
 .row-prezzo {
     
@@ -618,7 +626,7 @@ p.descrizione {
 }
 .prezzo-big {
     font-weight: 700;
-font-size: 25px;
+font-size: 23px;
 color: #2C333A;
 letter-spacing: -1px;
 }
@@ -882,7 +890,7 @@ font-size: 13.5px;
 .carrello-dinamico {
     position: absolute;
     top: 3px;
-    right: 3px;
+    right: 15px;
     
     border-radius: 10px;
     background-color: #F4B000;
@@ -1095,5 +1103,19 @@ margin-top: 15px;
         justify-content: flex-start;
         align-items: center;
         padding-right: 0px;
+    }
+    .carrello-dinamico {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        
+        border-radius: 10px;
+        background-color: #F4B000;
+        height: 25px;
+        width: 45px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }    

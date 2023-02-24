@@ -22,15 +22,11 @@ numTotProdotti.textContent = `(${schedaProdotto.length})`;
 
  
 
-for(let i = 0; i < numQuantita.length; i++ ) {
-    numQuantita[i].value = 1;
-}
-
 
 
 for(let i = 0; i < tastoAumenta.length; i++ ) {
     tastoAumenta[i].addEventListener('click', function() {
-        if(numQuantita[i].value !== '100') {
+        if(numQuantita[i].value !== '999') {
             numQuantita[i].value++;
             
         }
@@ -48,12 +44,33 @@ for(let i = 0; i < tastoDiminuisci.length; i++ ) {
     
 } 
  
+let numCarrelloDin = document.querySelectorAll('#num-carrello-din')
 
 
+for(let i = 0; i < numQuantita.length; i++ ) {
+    numQuantita[i].value = 1;
+    numQuantita[i].addEventListener('change', function(){
+        if(numQuantita[i].value < 1){
+            numQuantita[i].value = 1;
+        }
+        if(numQuantita[i].value > 999){
+            numQuantita[i].value = 999;
+        }
+    })
+}
 
 
+let addCarOut = document.querySelectorAll('#add-car-out');
 
 
+for(let i = 0; i < addCarOut.length; i++){
+    addCarOut[i].addEventListener('click', function(e){
+        e.preventDefault();
+       
+        numCarrelloDin[i].textContent = numQuantita[i].value;
+        
+    })
+}
 
 
 
