@@ -181,8 +181,8 @@ let popUpSconto = document.querySelector('.popup-sconto-scatola');
 popUpSconto.style.display = 'none';
 
 let bottonInfoDisp = document.querySelectorAll('.info-disp');
-let bottonArticoliKit = document.querySelectorAll('.articoli-kit');
-let bottonSconto = document.querySelectorAll('.sconto-scatola');
+let bottonArticoliKit = document.querySelectorAll('.bottone-articoli-kit');
+let bottonSconto = document.querySelectorAll('.bottone-sconto-scatola');
 
 for(let i = 0; i < bottonInfoDisp.length; i++){
     bottonInfoDisp[i].addEventListener('click', function(e){

@@ -148,6 +148,7 @@ margin-right: 10px;
     flex-direction: column;
    
     align-self: flex-end;
+    padding-bottom: 20px;
 }
 .titolo-prodotto {
 font-weight: 600;
@@ -207,8 +208,11 @@ color: #2C333A!important;
 }
 .flessibile p {
     margin-right: 4px;
+    cursor: pointer;
 }
-
+.flessibile p:hover {
+    text-decoration: underline;
+}
 .sez-3 .colonna-1,
 .sez-3 .colonna-2 {
    
@@ -363,6 +367,7 @@ padding-left: 30px;
     .prima-riga .sez-3  {
         width: 100%;
         align-self: flex-start;
+        padding-bottom: 0px;
     }
     .prima-riga .sez-1  {
         width: 100%;
@@ -387,6 +392,7 @@ padding-left: 30px;
               width: 100%;
               align-self: flex-start;
               flex-direction: row;
+              padding-bottom: 0px;
           }
           .prima-riga .sez-1  {
               width: 100%;
@@ -466,7 +472,7 @@ display: none;
     justify-content: flex-end!important;
 }
 .dimensione {
-    width: 100px!important;
+    width: 130px!important;
     
 }
 .uno {
@@ -475,7 +481,7 @@ display: none;
 .no-margine {
     margin-top: 0px!important;
     max-height: 36px!important;
-    max-width: 120px!important;
+    max-width: 110px!important;
     
 }
 .carrello {
@@ -510,5 +516,11 @@ padding: 10px!important;
 .inlinea {
     flex-direction: column;
     align-items: flex-start;
+}
+.col-estesa span {
+    font-weight: 400;
+    font-size: 13.5px;
+    color: #5D7079!important;
+    text-decoration: none!important;
 }
 }    

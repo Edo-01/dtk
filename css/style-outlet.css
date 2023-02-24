@@ -585,6 +585,7 @@ p.descrizione {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 20px;
 }
 .row-prezzo {
     
@@ -617,7 +618,7 @@ p.descrizione {
 }
 .prezzo-big {
     font-weight: 700;
-font-size: 27px;
+font-size: 25px;
 color: #2C333A;
 letter-spacing: -1px;
 }
@@ -669,9 +670,9 @@ text-decoration: line-through;
     margin:0px 2px;
     border-radius: 20px;
     padding: 2px;
-    border: 0px solid #fff;
+    border: 1px solid #e6e6e6;
     text-align: center;
-    background-color: #F5F5F5;
+   
 }
 .quantita input:focus {
     border: 0px solid #F5F5F5;
@@ -693,7 +694,7 @@ text-decoration: line-through;
     transform: translate(-50%, -50%);
     background-color: #fff;
     z-index: 10000;
-    padding: 45px 30px 30px;
+    padding: 25px 30px 30px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -738,13 +739,13 @@ text-decoration: line-through;
     transform: translate(-50%, -50%);
     background-color: #fff;
     z-index: 10000;
-    padding: 45px 30px 30px;
+    padding: 25px 30px 30px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    
 }
 .popup-articoli-kit table {
     width: 100%;
@@ -777,6 +778,7 @@ text-decoration: line-through;
     border: 1px solid #E2E2E2;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 5px 10px;
 }
 .intestazione-tabella th:nth-child(1) {
@@ -786,14 +788,18 @@ text-decoration: line-through;
 
 .intestazione-tabella th:nth-child(2) {
     
-    width:180px;
+    width:110px;
 }
 
 .intestazione-tabella th:nth-child(3) {
     
-    width: 110px;
+    width: 180px;
 }
 
+.intestazione-tabella th:nth-child(4) {
+    
+    width: 110px;
+}
 .dati-tabella td:nth-child(1) {
     
     width: 110px;
@@ -802,12 +808,17 @@ text-decoration: line-through;
 
 .dati-tabella td:nth-child(2) {
     
-    width:180px;
+    width:110px;
     text-align: center;
     overflow: hidden;
 }
 
 .dati-tabella td:nth-child(3) {
+    
+    width: 180px;
+    text-align: center;
+}
+.dati-tabella td:nth-child(4) {
     
     width: 110px;
     text-align: center;
@@ -828,11 +839,14 @@ td {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 .popup-sconto-scatola p {
     font-size: 14px;
     margin-bottom: 5px;
+}
+.popup-sconto-scatola span {
+font-weight: 600;
 }
 .flex-linee {
     display: flex;
@@ -841,6 +855,61 @@ td {
 }
 .ridotto {
     width: 170px;
+}
+.tabella-info {
+    width: 450px;
+    margin-top: 5px;
+}
+.int-tab {
+    width: 40%!important;
+}
+.container-testo-note {
+    max-width: 450px;
+    margin-top: 15px;
+}
+.container-testo-note p{
+font-size: 13.5px;
+}
+.img-tabella {
+    width: 50px;
+}
+.table-kit td {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carrello-dinamico {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    
+    border-radius: 10px;
+    background-color: #F4B000;
+    height: 25px;
+    width: 45px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carrello-dinamico img {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    height: 25px;
+    width: 25px; */
+    height: 16px;
+    width: 16px;
+    margin-right: 3px;
+}
+.carrello-dinamico p {
+    font-size: 11.5px;
+    font-weight: 600;
+    margin-top: 4px;
+   
 }
 /* ----------------------------------------------media desk---------------------------------------------------------------- */
 @media only screen and (min-width: 1281px) {
@@ -853,6 +922,7 @@ td {
 .box-product {
     width: 24%;
 }
+
 }
 
 /* ----------------------------------------------media tablet---------------------------------------------------------------- */
@@ -868,12 +938,22 @@ td {
         width: 32.3%;
     }
     .prezzo-big {
-        font-size: 24px;
+        font-size: 23px;
+    }
+    .row-sconto {
+    
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 0px;
     }
 }    
 
 /* ----------------------------------------------media mobile---------------------------------------------------------------- */
 @media only screen and (max-width: 700px) {
+    section {
+        overflow: hidden;
+    }
     .section-1 .container-2 .slide-outlet {
         padding: 20px;
     }
@@ -955,7 +1035,7 @@ td {
 margin-top: 15px;
     }
     .prezzo-big {
-        font-size: 24px;
+        font-size: 23px;
     }
     .container-button-product a {
         font-size: 12px;
@@ -1014,5 +1094,6 @@ margin-top: 15px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        padding-right: 0px;
     }
 }    
