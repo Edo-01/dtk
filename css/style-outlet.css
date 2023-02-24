@@ -639,15 +639,15 @@ letter-spacing: -1px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 33px;
-    height: 33px;
+    width: 28px;
+    height: 28px;
     margin-right: 7px;
     
 }
 .sconto-percentuale p {
     color:#fff;
     font-weight: 500;
-font-size: 12.5px;
+font-size: 11px;
 }
 .row-sconto  > p {
     font-weight: 500;
@@ -890,7 +890,7 @@ font-size: 13.5px;
 }
 .carrello-dinamico {
     position: absolute;
-    top: 3px;
+    top: 10px;
     right: 15px;
     
     border-radius: 10px;
