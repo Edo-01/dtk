@@ -593,7 +593,7 @@ p.descrizione {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 11px;
+    padding-right: 4px;
 }
 .row-prezzo {
     
@@ -626,7 +626,7 @@ p.descrizione {
 }
 .prezzo-big {
     font-weight: 700;
-font-size: 23px;
+font-size: 21px;
 color: #2C333A;
 letter-spacing: -1px;
 }
@@ -801,7 +801,7 @@ text-decoration: line-through;
 
 .intestazione-tabella th:nth-child(3) {
     
-    width: 180px;
+    width: 280px;
 }
 
 .intestazione-tabella th:nth-child(4) {
@@ -823,7 +823,7 @@ text-decoration: line-through;
 
 .dati-tabella td:nth-child(3) {
     
-    width: 180px;
+    width: 280px;
     text-align: center;
 }
 .dati-tabella td:nth-child(4) {
@@ -860,6 +860,7 @@ font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: -8px;
 }
 .ridotto {
     width: 170px;
@@ -1040,7 +1041,8 @@ font-size: 13.5px;
         padding: 0px 6px;
     }  
     .container-prezzi {
-margin-top: 15px;
+padding-top: 15px;
+
     }
     .prezzo-big {
         font-size: 23px;
