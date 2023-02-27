@@ -1,15 +1,24 @@
-.section-1 .container-2 .slide-outlet {
+.section-0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1350px;
+    width: 100%;
+    margin: 10px auto 0px;
+}
+
+.section-0 .container-2 .slide-outlet {
     background-image: url(../img/slider-test.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
-    width: 100%;
+    width: 100%; 
     display: flex;
     flex-direction: row!important;
     justify-content:space-around!important;
     align-items: center!important;
-    padding: 20px 60px;
+    padding: 30px 60px;
   
 }
 .container-titolo {
@@ -29,7 +38,7 @@
      color: #fff;
  }
  .sfondo {
-    background-color: #0088ccce!important;
+    background: rgba(61, 116, 166, 0.85)!important;
  }
  .larghezza50 {
     width: 50%;
@@ -49,7 +58,8 @@
  .par-log {
    
     max-width: 100% !important;
-    font-size: 19px!important;
+    font-size: 16px!important;
+    font-weight: 300!important;
     
  }
  .container-bottoni div {
@@ -58,6 +68,7 @@
  
 .button-slider {
     justify-content: center;
+    padding: 9px;
 }
 .larghezza25 h2 {
     line-height: 48px;
@@ -79,6 +90,13 @@
     font-size: 13px;
     font-weight: 400;
     color: #fff;
+}
+.background-section {
+    background-color: #F6F6F6;
+}
+.titolo-utente h2 {
+    font-size: 23px!important;
+    line-height: 29px!important;
 }
 
 /* ----------------------------------------------media notebook---------------------------------------------------------------- */
@@ -124,14 +142,14 @@
     .form-ricerca select {
         width: 100%;
     }
-    .section-1 .container-2 {
+    .section-0 .container-2 {
         width: 100%;
         background-color: #F6F6F6;
         align-self: center;
         height: 70vh;
 
     }
-    .section-1 .container-2 .slide-outlet {
+    .section-0 .container-2 .slide-outlet {
         display: flex;
     flex-direction: column!important;
     justify-content:space-around!important;
@@ -168,14 +186,14 @@
         justify-content: center;
         align-items: center;
     }
-    .section-1 .container-2 {
+    .section-0 .container-2 {
         width: 100%;
         background-color: #F6F6F6;
         align-self: center;
         height: 90vh;
 
     }
-    .section-1 .container-2 .slide-outlet {
+    .section-0 .container-2 .slide-outlet {
         display: flex;
     flex-direction: column!important;
     justify-content:space-around!important;

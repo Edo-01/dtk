@@ -118,14 +118,14 @@ input::-webkit-inner-spin-button
     border-radius: 20px;
     background-color: #fff;
     color: #2C333A;
-    height: 43px;
+    
     transition: all 0.3s;
     display: flex;
     align-items: center;
 
 }
 .button-slider a {
-    padding: 4px 10px;
+    
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
