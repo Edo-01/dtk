@@ -292,7 +292,8 @@
     <div class="margin-section back-color">
       <div class="section-1 larghezza altezza-assistenza">
         <div class="container-1 stretto">
-          <h2 class="titolo titolo-scuro titolo-carrello">Dettagli carrello</h2>
+          <h2 class="titolo titolo-scuro titolo-carrello">Dettaglio carrello</h2>
+          <a href="/outlet.html">Torna al catalogo</a>
         </div>
       </div>
     
@@ -407,9 +408,10 @@
                 </div>
                 <div class="terzo-blocco">
                   <div class="col-tabella col-qnt">
+                    <!-- correzione -->
                     <div class="quantita dimensione">
                       <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                      <p id="num-quantita">1</p>
+                      <input id="num-quantita" type="number" value="1" min="1" max="999">
                       <img id="tasto-aumenta" src="img/piu.svg" alt="">
                     </div>
                   </div>
@@ -483,9 +485,10 @@
                 </div>
                 <div class="terzo-blocco">
                   <div class="col-tabella col-qnt">
+                    <!-- correzione -->
                     <div class="quantita dimensione">
                       <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                      <p id="num-quantita">1</p>
+                      <input id="num-quantita" type="number" value="1" min="1" max="999">
                       <img id="tasto-aumenta" src="img/piu.svg" alt="">
                     </div>
                   </div>
@@ -559,9 +562,10 @@
                 </div>
                 <div class="terzo-blocco">
                   <div class="col-tabella col-qnt">
+                    <!-- correzione -->
                     <div class="quantita dimensione">
                       <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                      <p id="num-quantita">1</p>
+                      <input id="num-quantita" type="number" value="1" min="1" max="999">
                       <img id="tasto-aumenta" src="img/piu.svg" alt="">
                     </div>
                   </div>
@@ -635,9 +639,10 @@
                 </div>
                 <div class="terzo-blocco">
                   <div class="col-tabella col-qnt">
+                    <!-- correzione -->
                     <div class="quantita dimensione">
                       <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                      <p id="num-quantita">1</p>
+                      <input id="num-quantita" type="number" value="1" min="1" max="999">
                       <img id="tasto-aumenta" src="img/piu.svg" alt="">
                     </div>
                   </div>
@@ -703,7 +708,7 @@
               <div class="col-tabella col-qnt col-evadere linea-evadere">
                 <h5>Q.tà <span class="abs-text">da evadere</span></h5>
               </div>
-              <div class="col-tabella col-prezzo">
+              <div class="col-tabella col-prezzo col-prezzo-back-order">
                 <h5>Prezzo</h5>
               </div>
               <div class="col-tabella col-prezzo linea-sc">
@@ -718,172 +723,615 @@
             </div>
           </div>
 
-          <div data-count="" id="container-back-order" class="list-corpo list-corpo-back">
+          <div data-count="" id="container-back-order" class="blocco-back-order">
             <!-- avviso dinamico vuoto -->
             <div data-num="" class="container-data back-order-block">
               <div class="riga-data">
                 <p>Ordine n°: <span>123456</span></p>
                 <p>del: <span>01/01/2023</span></p>
               </div>
-              <div style="z-index: 5;position: relative;" class="prodotto-carrello back-order">
-                <div class="riga base-prodotto-cart mobil-col">
-                  <div class="primo-blocco">
-                    <div class="blocco-img"> 
-                      <div class="col-tabella col-img apri-big col-img-back-order">
-                        <img src="img/toner-hd.png" alt="">
-                        <div class="img-big">
+              <div class="contenitore-data">
+                <div style="z-index: 8;position: relative;" class="prodotto-carrello back-order">
+                  <div class="riga base-prodotto-cart mobil-col">
+                    <div class="primo-blocco">
+                      <div class="blocco-img"> 
+                        <div class="col-tabella col-img apri-big col-img-back-order">
                           <img src="img/toner-hd.png" alt="">
+                          <div class="img-big">
+                            <img src="img/toner-hd.png" alt="">
+                          </div>
+                        </div>
+                       
+                      </div>
+                      <div class="blocco-descr-mob">
+                        <div class="col-tabella col-dtk">
+                          <h3>3466001</h3>
+                        </div>
+                        <div class="col-tabella col-marca">
+                          <h3>Sony</h3>
+                        </div>
+                        <div class="col-tabella col-oem apri-oem">
+                          <h3>3592305205</h3>
+                          <span><img src="img/tri.svg" alt=""></span>
+                          <div class="container-altri-oem pop-oem">
+                            <p class="titolo-pop">Codici OEM compatibili</p>
+                            <p class="testo-pop">359230205, 35923055, 35d9230, 35905205, 35923dd5205, 3592205, 35d923505,
+                              35923d05205, 35925, 3592205</p>
+                          </div>
+                        </div>
+                        <div class="col-tabella col-descrizione">
+                          <p>At Lorem ipsum dolor sit amet, consectrd</p> <!-- max caratteri 39 (compresi gli spazi) -->
                         </div>
                       </div>
-                     
                     </div>
-                    <div class="blocco-descr-mob">
-                      <div class="col-tabella col-dtk">
-                        <h3>3466001</h3>
-                      </div>
-                      <div class="col-tabella col-marca">
-                        <h3>Sony</h3>
-                      </div>
-                      <div class="col-tabella col-oem apri-oem">
-                        <h3>3592305205</h3>
+                    <div class="secondo-blocco">
+                      <div class="col-tabella col-modello apri-modelli">
+                        <h3>Nome modello</h3>
                         <span><img src="img/tri.svg" alt=""></span>
-                        <div class="container-altri-oem pop-oem">
-                          <p class="titolo-pop">Codici OEM compatibili</p>
+                        <div class="container-altri-oem pop-modelli">
+                          <p class="titolo-pop">Modelli compatibili</p>
                           <p class="testo-pop">359230205, 35923055, 35d9230, 35905205, 35923dd5205, 3592205, 35d923505,
                             35923d05205, 35925, 3592205</p>
                         </div>
                       </div>
-                      <div class="col-tabella col-descrizione">
-                        <p>At Lorem ipsum dolor sit amet, consectrd</p> <!-- max caratteri 39 (compresi gli spazi) -->
+                      <div class="col-tabella col-kit">
+                        <img src="img/scatola.png" alt="">
+                      </div>
+                      <div class="col-tabella col-qnt qnt-back-order">
+                        <h3>4</h3>
                       </div>
                     </div>
-                  </div>
-                  <div class="secondo-blocco">
-                    <div class="col-tabella col-modello apri-modelli">
-                      <h3>Nome modello</h3>
-                      <span><img src="img/tri.svg" alt=""></span>
-                      <div class="container-altri-oem pop-modelli">
-                        <p class="titolo-pop">Modelli compatibili</p>
-                        <p class="testo-pop">359230205, 35923055, 35d9230, 35905205, 35923dd5205, 3592205, 35d923505,
-                          35923d05205, 35925, 3592205</p>
+                    <div class="terzo-blocco">
+                      <div class="col-tabella col-prezzo col-prezzo-parz larghezza-riga-prezzo">
+                      <h3 class="valore-singolo">30,60</h3>
+                    </div>
+                    <div class="col-tabella col-prezzo col-prezzo-sconto">
+                      <h3 class="valore-sconto">10%</h3>
+                    </div>
+                    <div class="col-tabella col-tot col-tot-back">
+                      <h3 class="valore-totale">30,60<span>€</span></h3>
+                    </div>
+                    </div>
+                    <div class="quarto-blocco">
+                      <div class="col-tabella col-cestino col-confirm">
+                        <img class="confirm"  src="img/confirm.svg" alt="">
+                        <img class="cancel"  src="img/cancel.svg" alt="">
+                        <div class="context context-info">
+                          <p></p>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-tabella col-kit">
-                      <img src="img/scatola.png" alt="">
-                    </div>
-                    <div class="col-tabella col-qnt">
-                      <h3>4</h3>
-                    </div>
+                    
                   </div>
-                  <div class="terzo-blocco">
-                    <div class="col-tabella col-prezzo col-prezzo-parz">
-                    <h3 class="valore-singolo">30,60</h3>
-                  </div>
-                  <div class="col-tabella col-prezzo col-prezzo-sconto">
-                    <h3 class="valore-sconto">10%</h3>
-                  </div>
-                  <div class="col-tabella col-tot col-tot-back">
-                    <h3 class="valore-totale">30,60<span>€</span></h3>
-                  </div>
-                  </div>
-                  <div class="quarto-blocco">
-                    <div class="col-tabella col-cestino col-confirm">
-                      <img class="confirm"  src="img/confirm.svg" alt="">
-                      <img class="cancel"  src="img/cancel.svg" alt="">
-                      <div  class="context context-info">
-                        <p></p>
+                </div>
+                <div style="z-index: 7;position: relative;" class="prodotto-carrello back-order">
+                  <div class="riga base-prodotto-cart mobil-col">
+                    <div class="primo-blocco">
+                      <div class="blocco-img"> 
+                        <div class="col-tabella col-img apri-big col-img-back-order">
+                          <img src="img/toner-hd.png" alt="">
+                          <div class="img-big">
+                            <img src="img/toner-hd.png" alt="">
+                          </div>
+                        </div>
+                       
+                      </div>
+                      <div class="blocco-descr-mob">
+                        <div class="col-tabella col-dtk">
+                          <h3>3466001</h3>
+                        </div>
+                        <div class="col-tabella col-marca">
+                          <h3>Sony</h3>
+                        </div>
+                        <div class="col-tabella col-oem apri-oem">
+                          <h3>3592305205</h3>
+                          <span><img src="img/tri.svg" alt=""></span>
+                          <div class="container-altri-oem pop-oem">
+                            <p class="titolo-pop">Codici OEM compatibili</p>
+                            <p class="testo-pop">359230205, 35923055, 35d9230, 35905205, 35923dd5205, 3592205, 35d923505,
+                              35923d05205, 35925, 3592205</p>
+                          </div>
+                        </div>
+                        <div class="col-tabella col-descrizione">
+                          <p>At Lorem ipsum dolor sit amet, consectrd</p> <!-- max caratteri 39 (compresi gli spazi) -->
+                        </div>
                       </div>
                     </div>
+                    <div class="secondo-blocco">
+                      <div class="col-tabella col-modello apri-modelli">
+                        <h3>Nome modello</h3>
+                        <span><img src="img/tri.svg" alt=""></span>
+                        <div class="container-altri-oem pop-modelli">
+                          <p class="titolo-pop">Modelli compatibili</p>
+                          <p class="testo-pop">359230205, 35923055, 35d9230, 35905205, 35923dd5205, 3592205, 35d923505,
+                            35923d05205, 35925, 3592205</p>
+                        </div>
+                      </div>
+                      <div class="col-tabella col-kit">
+                        <img src="img/scatola.png" alt="">
+                      </div>
+                      <div class="col-tabella col-qnt qnt-back-order">
+                        <h3>4</h3>
+                      </div>
+                    </div>
+                    <div class="terzo-blocco">
+                      <div class="col-tabella col-prezzo col-prezzo-parz larghezza-riga-prezzo">
+                      <h3 class="valore-singolo">30,60</h3>
+                    </div>
+                    <div class="col-tabella col-prezzo col-prezzo-sconto">
+                      <h3 class="valore-sconto">10%</h3>
+                    </div>
+                    <div class="col-tabella col-tot col-tot-back">
+                      <h3 class="valore-totale">30,60<span>€</span></h3>
+                    </div>
+                    </div>
+                    <div class="quarto-blocco">
+                      <div class="col-tabella col-cestino col-confirm">
+                        <img class="confirm"  src="img/confirm.svg" alt="">
+                        <img class="cancel"  src="img/cancel.svg" alt="">
+                        <div  class="context context-info">
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                    
                   </div>
-                  
+                </div>
+                <div style="z-index: 6;position: relative;" class="prodotto-carrello back-order">
+                  <div class="riga base-prodotto-cart mobil-col">
+                    <div class="primo-blocco">
+                      <div class="blocco-img"> 
+                        <div class="col-tabella col-img apri-big col-img-back-order">
+                          <img src="img/toner-hd.png" alt="">
+                          <div class="img-big">
+                            <img src="img/toner-hd.png" alt="">
+                          </div>
+                        </div>
+                       
+                      </div>
+                      <div class="blocco-descr-mob">
+                        <div class="col-tabella col-dtk">
+                          <h3>3466001</h3>
+                        </div>
+                        <div class="col-tabella col-marca">
+                          <h3>Sony</h3>
+                        </div>
+                        <div class="col-tabella col-oem apri-oem">
+                          <h3>3592305205</h3>
+                          <span><img src="img/tri.svg" alt=""></span>
+                          <div class="container-altri-oem pop-oem">
+                            <p class="titolo-pop">Codici OEM compatibili</p>
+                            <p class="testo-pop">359230205, 35923055, 35d9230, 35905205, 35923dd5205, 3592205, 35d923505,
+                              35923d05205, 35925, 3592205</p>
+                          </div>
+                        </div>
+                        <div class="col-tabella col-descrizione">
+                          <p>At Lorem ipsum dolor sit amet, consectrd</p> <!-- max caratteri 39 (compresi gli spazi) -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="secondo-blocco">
+                      <div class="col-tabella col-modello apri-modelli">
+                        <h3>Nome modello</h3>
+                        <span><img src="img/tri.svg" alt=""></span>
+                        <div class="container-altri-oem pop-modelli">
+                          <p class="titolo-pop">Modelli compatibili</p>
+                          <p class="testo-pop">359230205, 35923055, 35d9230, 35905205, 35923dd5205, 3592205, 35d923505,
+                            35923d05205, 35925, 3592205</p>
+                        </div>
+                      </div>
+                      <div class="col-tabella col-kit">
+                        <img src="img/scatola.png" alt="">
+                      </div>
+                      <div class="col-tabella col-qnt qnt-back-order">
+                        <h3>4</h3>
+                      </div>
+                    </div>
+                    <div class="terzo-blocco">
+                      <div class="col-tabella col-prezzo col-prezzo-parz larghezza-riga-prezzo">
+                      <h3 class="valore-singolo">30,60</h3>
+                    </div>
+                    <div class="col-tabella col-prezzo col-prezzo-sconto">
+                      <h3 class="valore-sconto">10%</h3>
+                    </div>
+                    <div class="col-tabella col-tot col-tot-back">
+                      <h3 class="valore-totale">30,60<span>€</span></h3>
+                    </div>
+                    </div>
+                    <div class="quarto-blocco">
+                      <div class="col-tabella col-cestino col-confirm">
+                        <img class="confirm"  src="img/confirm.svg" alt="">
+                        <img class="cancel"  src="img/cancel.svg" alt="">
+                        <div  class="context context-info">
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div style="z-index: 5;position: relative;" class="prodotto-carrello back-order">
+                  <div class="riga base-prodotto-cart mobil-col">
+                    <div class="primo-blocco">
+                      <div class="blocco-img"> 
+                        <div class="col-tabella col-img apri-big col-img-back-order">
+                          <img src="img/toner-hd.png" alt="">
+                          <div class="img-big">
+                            <img src="img/toner-hd.png" alt="">
+                          </div>
+                        </div>
+                       
+                      </div>
+                      <div class="blocco-descr-mob">
+                        <div class="col-tabella col-dtk">
+                          <h3>3466001</h3>
+                        </div>
+                        <div class="col-tabella col-marca">
+                          <h3>Sony</h3>
+                        </div>
+                        <div class="col-tabella col-oem apri-oem">
+                          <h3>3592305205</h3>
+                          <span><img src="img/tri.svg" alt=""></span>
+                          <div class="container-altri-oem pop-oem">
+                            <p class="titolo-pop">Codici OEM compatibili</p>
+                            <p class="testo-pop">359230205, 35923055, 35d9230, 35905205, 35923dd5205, 3592205, 35d923505,
+                              35923d05205, 35925, 3592205</p>
+                          </div>
+                        </div>
+                        <div class="col-tabella col-descrizione">
+                          <p>At Lorem ipsum dolor sit amet, consectrd</p> <!-- max caratteri 39 (compresi gli spazi) -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="secondo-blocco">
+                      <div class="col-tabella col-modello apri-modelli">
+                        <h3>Nome modello</h3>
+                        <span><img src="img/tri.svg" alt=""></span>
+                        <div class="container-altri-oem pop-modelli">
+                          <p class="titolo-pop">Modelli compatibili</p>
+                          <p class="testo-pop">359230205, 35923055, 35d9230, 35905205, 35923dd5205, 3592205, 35d923505,
+                            35923d05205, 35925, 3592205</p>
+                        </div>
+                      </div>
+                      <div class="col-tabella col-kit">
+                        <img src="img/scatola.png" alt="">
+                      </div>
+                      <div class="col-tabella col-qnt qnt-back-order">
+                        <h3>4</h3>
+                      </div>
+                    </div>
+                    <div class="terzo-blocco">
+                      <div class="col-tabella col-prezzo col-prezzo-parz larghezza-riga-prezzo">
+                      <h3 class="valore-singolo">30,60</h3>
+                    </div>
+                    <div class="col-tabella col-prezzo col-prezzo-sconto">
+                      <h3 class="valore-sconto">10%</h3>
+                    </div>
+                    <div class="col-tabella col-tot col-tot-back">
+                      <h3 class="valore-totale">30,60<span>€</span></h3>
+                    </div>
+                    </div>
+                    <div class="quarto-blocco">
+                      <div class="col-tabella col-cestino col-confirm">
+                        <img class="confirm"  src="img/confirm.svg" alt="">
+                        <img class="cancel"  src="img/cancel.svg" alt="">
+                        <div  class="context context-info">
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
                 </div>
               </div>
              
              
             </div>
 
-           
-          </div>
-          <div data-count="" id="container-back-order" class="list-corpo list-corpo-back">
+            <!-- list-corpo list-corpo-back    classi sostituite qui sotto -->
+          </div>   
+          <div data-count="" id="container-back-order" class="blocco-back-order">
             <!-- avviso dinamico vuoto -->
             <div data-num="" class="container-data back-order-block">
               <div class="riga-data">
                 <p>Ordine n°: <span>123456</span></p>
                 <p>del: <span>01/01/2023</span></p>
               </div>
-              <div style="z-index: 3;position: relative;" class="prodotto-carrello back-order">
-                <div class="riga base-prodotto-cart mobil-col">
-                  <div class="primo-blocco">
-                    <div class="blocco-img"> 
-                      <div class="col-tabella col-img apri-big col-img-back-order">
-                        <img src="img/toner-hd.png" alt="">
-                        <div class="img-big">
+              <div class="contenitore-data">
+                <div style="z-index: 4;position: relative;" class="prodotto-carrello back-order">
+                  <div class="riga base-prodotto-cart mobil-col">
+                    <div class="primo-blocco">
+                      <div class="blocco-img"> 
+                        <div class="col-tabella col-img apri-big col-img-back-order">
                           <img src="img/toner-hd.png" alt="">
+                          <div class="img-big">
+                            <img src="img/toner-hd.png" alt="">
+                          </div>
+                        </div>
+                       
+                      </div>
+                      <div class="blocco-descr-mob">
+                        <div class="col-tabella col-dtk">
+                          <h3>3466001</h3>
+                        </div>
+                        <div class="col-tabella col-marca">
+                          <h3>Sony</h3>
+                        </div>
+                        <div class="col-tabella col-oem apri-oem">
+                          <h3>3592305205</h3>
+                          <span><img src="img/tri.svg" alt=""></span>
+                          <div class="container-altri-oem pop-oem">
+                            <p class="titolo-pop">Codici OEM compatibili</p>
+                            <p class="testo-pop">359230205, 35923055, 35d9230, 35905205, 35923dd5205, 3592205, 35d923505,
+                              35923d05205, 35925, 3592205</p>
+                          </div>
+                        </div>
+                        <div class="col-tabella col-descrizione">
+                          <p>At Lorem ipsum dolor sit amet, consectrd</p> <!-- max caratteri 39 (compresi gli spazi) -->
                         </div>
                       </div>
-                     
                     </div>
-                    <div class="blocco-descr-mob">
-                      <div class="col-tabella col-dtk">
-                        <h3>3466001</h3>
-                      </div>
-                      <div class="col-tabella col-marca">
-                        <h3>Sony</h3>
-                      </div>
-                      <div class="col-tabella col-oem apri-oem">
-                        <h3>3592305205</h3>
+                    <div class="secondo-blocco">
+                      <div class="col-tabella col-modello apri-modelli">
+                        <h3>Nome modello</h3>
                         <span><img src="img/tri.svg" alt=""></span>
-                        <div class="container-altri-oem pop-oem">
-                          <p class="titolo-pop">Codici OEM compatibili</p>
+                        <div class="container-altri-oem pop-modelli">
+                          <p class="titolo-pop">Modelli compatibili</p>
                           <p class="testo-pop">359230205, 35923055, 35d9230, 35905205, 35923dd5205, 3592205, 35d923505,
                             35923d05205, 35925, 3592205</p>
                         </div>
                       </div>
-                      <div class="col-tabella col-descrizione">
-                        <p>At Lorem ipsum dolor sit amet, consectrd</p> <!-- max caratteri 39 (compresi gli spazi) -->
+                      <div class="col-tabella col-kit">
+                        <img src="img/scatola.png" alt="">
+                      </div>
+                      <div class="col-tabella col-qnt qnt-back-order">
+                        <h3>4</h3>
                       </div>
                     </div>
-                  </div>
-                  <div class="secondo-blocco">
-                    <div class="col-tabella col-modello apri-modelli">
-                      <h3>Nome modello</h3>
-                      <span><img src="img/tri.svg" alt=""></span>
-                      <div class="container-altri-oem pop-modelli">
-                        <p class="titolo-pop">Modelli compatibili</p>
-                        <p class="testo-pop">359230205, 35923055, 35d9230, 35905205, 35923dd5205, 3592205, 35d923505,
-                          35923d05205, 35925, 3592205</p>
+                    <div class="terzo-blocco">
+                      <div class="col-tabella col-prezzo col-prezzo-parz larghezza-riga-prezzo">
+                      <h3 class="valore-singolo">30,60</h3>
+                    </div>
+                    <div class="col-tabella col-prezzo col-prezzo-sconto">
+                      <h3 class="valore-sconto">10%</h3>
+                    </div>
+                    <div class="col-tabella col-tot col-tot-back">
+                      <h3 class="valore-totale">30,60<span>€</span></h3>
+                    </div>
+                    </div>
+                    <div class="quarto-blocco">
+                      <div class="col-tabella col-cestino col-confirm">
+                        <img class="confirm"  src="img/confirm.svg" alt="">
+                        <img class="cancel"  src="img/cancel.svg" alt="">
+                        <div  class="context context-info">
+                          <p></p>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-tabella col-kit">
-                      <img src="img/scatola.png" alt="">
-                    </div>
-                    <div class="col-tabella col-qnt">
-                      <h3>4</h3>
-                    </div>
+                    
                   </div>
-                  <div class="terzo-blocco">
-                    <div class="col-tabella col-prezzo col-prezzo-parz">
-                    <h3 class="valore-singolo">30,60</h3>
-                  </div>
-                  <div class="col-tabella col-prezzo col-prezzo-sconto">
-                    <h3 class="valore-sconto">10%</h3>
-                  </div>
-                  <div class="col-tabella col-tot col-tot-back">
-                    <h3 class="valore-totale">30,60<span>€</span></h3>
-                  </div>
-                  </div>
-                  <div class="quarto-blocco">
-                    <div class="col-tabella col-cestino col-confirm">
-                      <img class="confirm"  src="img/confirm.svg" alt="">
-                      <img class="cancel"  src="img/cancel.svg" alt="">
-                      <div  class="context context-info">
-                        <p></p>
+                </div>
+                <div style="z-index: 3;position: relative;" class="prodotto-carrello back-order">
+                  <div class="riga base-prodotto-cart mobil-col">
+                    <div class="primo-blocco">
+                      <div class="blocco-img"> 
+                        <div class="col-tabella col-img apri-big col-img-back-order">
+                          <img src="img/toner-hd.png" alt="">
+                          <div class="img-big">
+                            <img src="img/toner-hd.png" alt="">
+                          </div>
+                        </div>
+                       
+                      </div>
+                      <div class="blocco-descr-mob">
+                        <div class="col-tabella col-dtk">
+                          <h3>3466001</h3>
+                        </div>
+                        <div class="col-tabella col-marca">
+                          <h3>Sony</h3>
+                        </div>
+                        <div class="col-tabella col-oem apri-oem">
+                          <h3>3592305205</h3>
+                          <span><img src="img/tri.svg" alt=""></span>
+                          <div class="container-altri-oem pop-oem">
+                            <p class="titolo-pop">Codici OEM compatibili</p>
+                            <p class="testo-pop">359230205, 35923055, 35d9230, 35905205, 35923dd5205, 3592205, 35d923505,
+                              35923d05205, 35925, 3592205</p>
+                          </div>
+                        </div>
+                        <div class="col-tabella col-descrizione">
+                          <p>At Lorem ipsum dolor sit amet, consectrd</p> <!-- max caratteri 39 (compresi gli spazi) -->
+                        </div>
                       </div>
                     </div>
+                    <div class="secondo-blocco">
+                      <div class="col-tabella col-modello apri-modelli">
+                        <h3>Nome modello</h3>
+                        <span><img src="img/tri.svg" alt=""></span>
+                        <div class="container-altri-oem pop-modelli">
+                          <p class="titolo-pop">Modelli compatibili</p>
+                          <p class="testo-pop">359230205, 35923055, 35d9230, 35905205, 35923dd5205, 3592205, 35d923505,
+                            35923d05205, 35925, 3592205</p>
+                        </div>
+                      </div>
+                      <div class="col-tabella col-kit">
+                        <img src="img/scatola.png" alt="">
+                      </div>
+                      <div class="col-tabella col-qnt qnt-back-order">
+                        <h3>4</h3>
+                      </div>
+                    </div>
+                    <div class="terzo-blocco">
+                      <div class="col-tabella col-prezzo col-prezzo-parz larghezza-riga-prezzo">
+                      <h3 class="valore-singolo">30,60</h3>
+                    </div>
+                    <div class="col-tabella col-prezzo col-prezzo-sconto">
+                      <h3 class="valore-sconto">10%</h3>
+                    </div>
+                    <div class="col-tabella col-tot col-tot-back">
+                      <h3 class="valore-totale">30,60<span>€</span></h3>
+                    </div>
+                    </div>
+                    <div class="quarto-blocco">
+                      <div class="col-tabella col-cestino col-confirm">
+                        <img class="confirm"  src="img/confirm.svg" alt="">
+                        <img class="cancel"  src="img/cancel.svg" alt="">
+                        <div  class="context context-info">
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                    
                   </div>
-                  
+                </div>
+                <div style="z-index: 2;position: relative;" class="prodotto-carrello back-order">
+                  <div class="riga base-prodotto-cart mobil-col">
+                    <div class="primo-blocco">
+                      <div class="blocco-img"> 
+                        <div class="col-tabella col-img apri-big col-img-back-order">
+                          <img src="img/toner-hd.png" alt="">
+                          <div class="img-big">
+                            <img src="img/toner-hd.png" alt="">
+                          </div>
+                        </div>
+                       
+                      </div>
+                      <div class="blocco-descr-mob">
+                        <div class="col-tabella col-dtk">
+                          <h3>3466001</h3>
+                        </div>
+                        <div class="col-tabella col-marca">
+                          <h3>Sony</h3>
+                        </div>
+                        <div class="col-tabella col-oem apri-oem">
+                          <h3>3592305205</h3>
+                          <span><img src="img/tri.svg" alt=""></span>
+                          <div class="container-altri-oem pop-oem">
+                            <p class="titolo-pop">Codici OEM compatibili</p>
+                            <p class="testo-pop">359230205, 35923055, 35d9230, 35905205, 35923dd5205, 3592205, 35d923505,
+                              35923d05205, 35925, 3592205</p>
+                          </div>
+                        </div>
+                        <div class="col-tabella col-descrizione">
+                          <p>At Lorem ipsum dolor sit amet, consectrd</p> <!-- max caratteri 39 (compresi gli spazi) -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="secondo-blocco">
+                      <div class="col-tabella col-modello apri-modelli">
+                        <h3>Nome modello</h3>
+                        <span><img src="img/tri.svg" alt=""></span>
+                        <div class="container-altri-oem pop-modelli">
+                          <p class="titolo-pop">Modelli compatibili</p>
+                          <p class="testo-pop">359230205, 35923055, 35d9230, 35905205, 35923dd5205, 3592205, 35d923505,
+                            35923d05205, 35925, 3592205</p>
+                        </div>
+                      </div>
+                      <div class="col-tabella col-kit">
+                        <img src="img/scatola.png" alt="">
+                      </div>
+                      <div class="col-tabella col-qnt qnt-back-order">
+                        <h3>4</h3>
+                      </div>
+                    </div>
+                    <div class="terzo-blocco">
+                      <div class="col-tabella col-prezzo col-prezzo-parz larghezza-riga-prezzo">
+                      <h3 class="valore-singolo">30,60</h3>
+                    </div>
+                    <div class="col-tabella col-prezzo col-prezzo-sconto">
+                      <h3 class="valore-sconto">10%</h3>
+                    </div>
+                    <div class="col-tabella col-tot col-tot-back">
+                      <h3 class="valore-totale">30,60<span>€</span></h3>
+                    </div>
+                    </div>
+                    <div class="quarto-blocco">
+                      <div class="col-tabella col-cestino col-confirm">
+                        <img class="confirm"  src="img/confirm.svg" alt="">
+                        <img class="cancel"  src="img/cancel.svg" alt="">
+                        <div  class="context context-info">
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div style="z-index: 1;position: relative;" class="prodotto-carrello back-order">
+                  <div class="riga base-prodotto-cart mobil-col">
+                    <div class="primo-blocco">
+                      <div class="blocco-img"> 
+                        <div class="col-tabella col-img apri-big col-img-back-order">
+                          <img src="img/toner-hd.png" alt="">
+                          <div class="img-big">
+                            <img src="img/toner-hd.png" alt="">
+                          </div>
+                        </div>
+                       
+                      </div>
+                      <div class="blocco-descr-mob">
+                        <div class="col-tabella col-dtk">
+                          <h3>3466001</h3>
+                        </div>
+                        <div class="col-tabella col-marca">
+                          <h3>Sony</h3>
+                        </div>
+                        <div class="col-tabella col-oem apri-oem">
+                          <h3>3592305205</h3>
+                          <span><img src="img/tri.svg" alt=""></span>
+                          <div class="container-altri-oem pop-oem">
+                            <p class="titolo-pop">Codici OEM compatibili</p>
+                            <p class="testo-pop">359230205, 35923055, 35d9230, 35905205, 35923dd5205, 3592205, 35d923505,
+                              35923d05205, 35925, 3592205</p>
+                          </div>
+                        </div>
+                        <div class="col-tabella col-descrizione">
+                          <p>At Lorem ipsum dolor sit amet, consectrd</p> <!-- max caratteri 39 (compresi gli spazi) -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="secondo-blocco">
+                      <div class="col-tabella col-modello apri-modelli">
+                        <h3>Nome modello</h3>
+                        <span><img src="img/tri.svg" alt=""></span>
+                        <div class="container-altri-oem pop-modelli">
+                          <p class="titolo-pop">Modelli compatibili</p>
+                          <p class="testo-pop">359230205, 35923055, 35d9230, 35905205, 35923dd5205, 3592205, 35d923505,
+                            35923d05205, 35925, 3592205</p>
+                        </div>
+                      </div>
+                      <div class="col-tabella col-kit">
+                        <img src="img/scatola.png" alt="">
+                      </div>
+                      <div class="col-tabella col-qnt qnt-back-order">
+                        <h3>4</h3>
+                      </div>
+                    </div>
+                    <div class="terzo-blocco">
+                      <div class="col-tabella col-prezzo col-prezzo-parz larghezza-riga-prezzo">
+                      <h3 class="valore-singolo">30,60</h3>
+                    </div>
+                    <div class="col-tabella col-prezzo col-prezzo-sconto">
+                      <h3 class="valore-sconto">10%</h3>
+                    </div>
+                    <div class="col-tabella col-tot col-tot-back">
+                      <h3 class="valore-totale">30,60<span>€</span></h3>
+                    </div>
+                    </div>
+                    <div class="quarto-blocco">
+                      <div class="col-tabella col-cestino col-confirm">
+                        <img class="confirm"  src="img/confirm.svg" alt="">
+                        <img class="cancel"  src="img/cancel.svg" alt="">
+                        <div  class="context context-info">
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
                 </div>
               </div>
+              
               
              
             </div>
@@ -916,9 +1364,53 @@
                     <h3>Note per la spedizione</h3>
                  </div>
                  <div class="row-text">
+                  <form action="">
                     <textarea name="" id="" cols="30" rows="10" placeholder="Scrivi qui..."></textarea>
+                  </form>
                  </div>
                 </div>
+                <div class="col-grande">
+                  <div class="row-titolo">
+                     <h3>Metodo di pagamento</h3>
+                  </div>
+                  <div class="row-text blocco-pagamenti">
+                     <form class="form-metodi-pagamento" action="">
+                      <label for="metodo-pagamento">Predefinito</label>
+                      <div class="linea-form prima-linea-form">
+                        <input type="radio" name="metodo-pagamento" id="metodo-pagamento" value="" checked>
+                        <div>
+                          <p>Ricevuta Bancaria</p>
+                          <p>Ri.ba 30/60/90/120 D.F F.M</p>
+                        </div>
+                      </div>
+                      <label class="secondo-label" for="metodo-pagamento">Altri metodi di pagamento</label>
+                      <div class="linea-form seconda-linea-form">
+                        <input type="radio" name="metodo-pagamento" id="metodo-pagamento" value="">
+                        <div>
+                          <p>Contrassegno / Contanti</p>
+                        </div>
+                      </div>
+                      <div class="linea-form">
+                        <input type="radio" name="metodo-pagamento" id="metodo-pagamento" value="">
+                        <div>
+                          <p>Bonifico all'ordine</p>
+                        </div>
+                      </div>
+                      <div class="linea-form">
+                        <input type="radio" name="metodo-pagamento" id="metodo-pagamento" value="">
+                        <div class="linea-carta">
+                          <p>Carta di credito / debito</p>
+                          <div class="linea-select">
+                            <select name="" id="">
+                                <option id="testing" value="">💳 4323123455550987</option>
+                              <option value="">💳 5113123455550987</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                     </form>
+                  </div>
+                 </div>
                 <div class="col-piccola">
                 <div class="riga-subtot">
                     <div class="col-testi">
@@ -970,7 +1462,7 @@
     </div>
 </section>
 
-<section>
+<!-- <section>
     <div class="margin-section">
         <div class="section-3 larghezza">
             <div class="container-3">
@@ -1001,7 +1493,7 @@
                                 <p></p>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                     <div class="col25">
                         
                         <div class="tab-pagamenti">
@@ -1035,7 +1527,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <section>
     <div class="margin-section">
@@ -1046,12 +1538,13 @@
                   <h3>Indirizzo di fatturazione</h3>
                 </div>
                 <div class="fin-row-cont">
-                  <div class="testo-tab">
-                    <p>IT4852572057209520</p>
-                  </div>
-                  <div class="tab-descriz">
-                    <h5>Lorem ipsum </h5>
-                    <p>AtLorem ipsum dolor sit amet, consectetur adipiscing elitniche AtLorem ipsum dolor sit amet,</p>
+                  
+                  <div class="tab-dati">
+                    <h5>DTK S.R.L.</h5>
+                    <h5>Marcello Piccioni</h5>
+                    <p>Via Acuto 52B</p>
+                    <p>00131, Roma, RM, Italia</p>
+                    <p>P.IVA: 07582561002</p>
                   </div>
                 </div>
               </div>
@@ -1081,15 +1574,21 @@
                 <div class="fin-row-cont">
                   <div class="linee">
                     <select name="" id="">
-                        <option value="">IT4852572057209520</option>
+                        <option value="">DTK S.R.L. - Via Acuto 52B - 00131, Roma, RM, Italia</option>
+                        <option value="">DTK S.R.L. - Via Lomellina 32 - 20100, Milano, MI, Italia</option>
+                        <option value="">Società S.R.L. - Viale Romagna 32 - 10234, Firenze, FI, Italia</option>
                     </select>
                     <div class="container-ico">
-                        <img src="img/apri-pop.svg" alt="">
+                        <div id="context-sped" class="context-spedizione"><p>Aggiungi indirizzo</p></div>
+                        <img id="tasto-apri-pop-sped" src="img/apri-pop.svg" alt="">
                     </div>
                 </div>
                   <div class="tab-descriz">
-                    <h5>Lorem ipsum </h5>
-                    <p>AtLorem ipsum dolor sit amet, consectetur adipiscing elitniche AtLorem ipsum dolor sit amet,</p>
+                    <h5>DTK S.R.L.</h5>
+                    <h5>Marcello Piccioni</h5>
+                    <p>Via Acuto 52B</p>
+                    <p>00131, Roma, RM, Italia</p>
+                    <p>P.IVA: 07582561002</p>
                   </div>
                 </div>
               </div>
@@ -1118,6 +1617,29 @@
 </div>
 </div>
 </section>
+
+<section id="modulo-log-sped" class="pop-up-add-spedizione">
+  <div class="box-pop-up">
+   <h3>Aggiungi indirizzo di spedizione</h3>
+   <form class="form-spedizione" action="">
+    <label for="societa">Nome Referente</label>
+    <input class="campo" name="societa" type="text">
+    <label for="societa">Indirizzo</label>
+    <input class="campo" name="societa" type="text">
+    <label for="societa">N° civico</label>
+    <input class="campo" name="societa" type="text">
+    <label for="societa">Città</label>
+    <input class="campo" name="societa" type="text">
+    <label for="societa">Cap</label>
+    <input class="campo" name="societa" type="text">
+    <button type="submit">Aggiungi</button>
+   </form>
+  </div>
+  <img class="chiudi-pop-sped" src="img/chiudi.svg" alt="">
+</section>
+<div id="sfondo-modulo-spedizione" class="sfondo-container-login"></div>
+
+
 
     
 <footer>

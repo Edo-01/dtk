@@ -63,46 +63,96 @@ let apriModelli = document.querySelectorAll('.apri-modelli');
 let popOem = document.querySelectorAll('.pop-oem');
 let popModelli = document.querySelectorAll('.pop-modelli');
 
-for(let i = 0; i < prodottoCarrello.length; i++) {
-    popOem[i].style.display = 'none';
-    
-    apriOem[i].addEventListener('click', function(e) {
-        popOem[i].removeAttribute('style');
-        e.stopPropagation();
-    })
-    popOem[i].addEventListener('click',function(e){
-        e.stopPropagation();
-    })
-   
 
-}    
-document.body.addEventListener('click', function() {   // PER CHIUDERE IL POPUP
+
+window.addEventListener('resize', function(){
+    console.log(window.innerWidth);
+})
+
+
+
+
+
+if(window.innerWidth > 1000) {
     for(let i = 0; i < prodottoCarrello.length; i++) {
         popOem[i].style.display = 'none';
-       
+        
+        apriOem[i].addEventListener('mouseover', function() {
+            popOem[i].removeAttribute('style');
+            
+        })
+        apriOem[i].addEventListener('mouseleave', function() {
+            popOem[i].style.display = 'none';
+            
+        })
+        
     }
-})
-
-
-for(let i = 0; i < prodottoCarrello.length; i++) {
-    popModelli[i].style.display = 'none';
-    
-    apriModelli[i].addEventListener('click', function(e) {
-        popModelli[i].removeAttribute('style');
-        e.stopPropagation();
-    })
-    popModelli[i].addEventListener('click',function(e){
-        e.stopPropagation();
-    })
-   
-
-}    
-document.body.addEventListener('click', function() {   // PER CHIUDERE IL POPUP
     for(let i = 0; i < prodottoCarrello.length; i++) {
         popModelli[i].style.display = 'none';
+        
+        apriModelli[i].addEventListener('mouseover', function() {
+            popModelli[i].removeAttribute('style');
+            
+        })
+        apriModelli[i].addEventListener('mouseleave', function() {
+            popModelli[i].style.display = 'none';
+            
+        })
        
-    }
-})
+       
+    
+    }  
+}
+
+
+if(window.innerWidth < 1000) {
+    for(let i = 0; i < prodottoCarrello.length; i++) {
+        popOem[i].style.display = 'none';
+        
+        apriOem[i].addEventListener('click', function(e) {
+            popOem[i].removeAttribute('style');
+            e.stopPropagation();
+        })
+        popOem[i].addEventListener('click',function(e){
+            e.stopPropagation();
+        })
+       
+    
+    }    
+    
+    document.body.addEventListener('click', function() {   // PER CHIUDERE IL POPUP
+        for(let i = 0; i < prodottoCarrello.length; i++) {
+            popOem[i].style.display = 'none';
+           
+        }
+    })
+    
+    
+    for(let i = 0; i < prodottoCarrello.length; i++) {
+        popModelli[i].style.display = 'none';
+        
+        apriModelli[i].addEventListener('click', function(e) {
+            popModelli[i].removeAttribute('style');
+            e.stopPropagation();
+        })
+        popModelli[i].addEventListener('click',function(e){
+            e.stopPropagation();
+        })
+       
+    
+    }   
+    
+    document.body.addEventListener('click', function() {   // PER CHIUDERE IL POPUP
+        for(let i = 0; i < prodottoCarrello.length; i++) {
+            popModelli[i].style.display = 'none';
+           
+        }
+    })
+    
+}
+
+
+
 
 
 
@@ -115,24 +165,21 @@ let valoreSingolo = document.querySelectorAll('.valore-singolo');
 let valoreTotale = document.querySelectorAll('.valore-totale');
 
 
-
-
-
-
-
-
-for(let i = 0; i < numQuantita.length; i++ ) {
-    numQuantita[i].textContent = 1;
+// for(let i = 0; i < numQuantita.length; i++ ) {
+//     numQuantita[i].textContent = 1;
     
-}
+// }
+
+
+
 
 
 
 for(let i = 0; i < tastoAumenta.length; i++ ) {
     tastoAumenta[i].addEventListener('click', function() {
-        if(numQuantita[i].textContent !== '100') {
-            numQuantita[i].textContent++;
-           
+        if(numQuantita[i].value !== '999') {
+            numQuantita[i].value++;
+            
         }
     })
 }   
@@ -140,13 +187,30 @@ for(let i = 0; i < tastoAumenta.length; i++ ) {
 
 for(let i = 0; i < tastoDiminuisci.length; i++ ) {
     tastoDiminuisci[i].addEventListener('click', function() {
-        if(numQuantita[i].textContent !== '1') {
-            numQuantita[i].textContent--;
+        if(numQuantita[i].value !== '1') {
+            numQuantita[i].value--;
             
         }
     })
     
 } 
+
+for(let i = 0; i < numQuantita.length; i++ ) {
+    numQuantita[i].value = 1;
+    numQuantita[i].addEventListener('change', function(){
+        if(numQuantita[i].value < 1){
+            numQuantita[i].value = 1;
+        }
+        if(numQuantita[i].value > 999){
+            numQuantita[i].value = 999;
+        }
+    })
+}
+
+
+
+
+
 
 let cestino = document.querySelectorAll('.cestino');
 let listCorpo = document.querySelector('.list-corpo');
@@ -170,31 +234,31 @@ listCorpo.append(paragrafo);
     
 }
 
-let tabPagamenti = document.querySelectorAll('.tab-pagamenti');
+// let tabPagamenti = document.querySelectorAll('.tab-pagamenti');
 
 
-let titoloTab = document.querySelectorAll('.tab-pagamenti h4');
-let dettaglio = document.createElement('p');
+// let titoloTab = document.querySelectorAll('.tab-pagamenti h4');
+// let dettaglio = document.createElement('p');
 
-dettaglio.classList.add('p-metodo-select');
-let primaRiga = document.querySelector('.prima-riga');
-primaRiga.append(dettaglio);
+// dettaglio.classList.add('p-metodo-select');
+// let primaRiga = document.querySelector('.prima-riga');
+// primaRiga.append(dettaglio);
 
 
-for(let i = 0; i< tabPagamenti.length; i++) {
-    tabPagamenti[i].addEventListener('click', function() {
+// for(let i = 0; i< tabPagamenti.length; i++) {
+//     tabPagamenti[i].addEventListener('click', function() {
         
-        for(let i = 0; i< tabPagamenti.length; i++) {
-            tabPagamenti[i].classList.remove('selezionata');
-        }
+//         for(let i = 0; i< tabPagamenti.length; i++) {
+//             tabPagamenti[i].classList.remove('selezionata');
+//         }
 
-        tabPagamenti[i].classList.add('selezionata');
+//         tabPagamenti[i].classList.add('selezionata');
       
-        dettaglio.innerHTML = `Hai selezionato: <span class="bolding">${titoloTab[i].textContent}</span>`
-    })
-}
+//         dettaglio.innerHTML = `Hai selezionato: <span class="bolding">${titoloTab[i].textContent}</span>`
+//     })
+// }
 
-
+ 
 
 let contextElement = document.querySelectorAll('.context-info');
 let bottConfirm = document.querySelectorAll('.confirm');
@@ -210,7 +274,7 @@ for(let i = 0; i< contextElement.length; i++) {
 for(let i = 0; i< contextElement.length; i++) {
     bottConfirm[i].addEventListener('mouseover', function(){
 contextElement[i].removeAttribute('style');
-descriz[i].textContent = 'Ripristina';
+descriz[i].textContent = 'Conferma';
     })
 
 }    
@@ -295,3 +359,45 @@ console.log(listCorpo);
 //         alert('vuoto');
 //     }
 // }
+
+let moduloSped = document.querySelector('#modulo-log-sped');
+let sfondoModuloSped = document.querySelector('#sfondo-modulo-spedizione');
+let tastoApriPopSped = document.querySelector('#tasto-apri-pop-sped');
+let chiudiPopSped = document.querySelector('.chiudi-pop-sped');
+
+sfondoModuloSped.style.display = 'none';
+moduloSped.style.display = 'none';
+
+tastoApriPopSped.addEventListener('click', function(e){
+    e.stopPropagation();
+    sfondoModuloSped.removeAttribute('style');
+    moduloSped.removeAttribute('style');
+    document.body.style.overflow = 'hidden';
+})
+moduloSped.addEventListener('click', function(e){
+    e.stopPropagation();
+})
+document.body.addEventListener('click', function() {   // PER CHIUDERE IL POPUP da body
+    sfondoModuloSped.style.display = 'none';
+moduloSped.style.display = 'none'; 
+document.body.removeAttribute('style');
+    
+})
+chiudiPopSped.addEventListener('click', function(){
+    sfondoModuloSped.style.display = 'none';
+moduloSped.style.display = 'none'; 
+document.body.removeAttribute('style');
+})
+
+let optionElement = document.querySelector('#testing');
+
+let contextSped = document.querySelector('#context-sped');
+
+contextSped.style.display = 'none';
+
+tastoApriPopSped.addEventListener('mouseover', function(){
+    contextSped.removeAttribute('style');
+})
+tastoApriPopSped.addEventListener('mouseleave', function(){
+    contextSped.style.display = 'none';
+})

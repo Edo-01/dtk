@@ -14,7 +14,7 @@ let tastoDiminuisci = document.querySelectorAll('#tasto-diminuisci');
 let numQuantita = document.querySelectorAll('#num-quantita');  // 1
 
 
-
+ 
 
 let numTotProdotti = document.querySelector('#tot-num-prodotti');
 numTotProdotti.textContent = `(${schedaProdotto.length})`;
