@@ -345,6 +345,7 @@ color: #5D7079;
 }
 .riga-subtot:last-of-type {
     border: 0px solid #E2E2E2;
+    padding-top: 58px;
 }
 .riga-subtot:first-of-type {
     padding-top: 0px;
@@ -984,8 +985,8 @@ margin-bottom: 12px;
 }
 .form-spedizione .campo{
     width: 100%;
-    margin-bottom: 5px;
-    padding: 7px 20px;
+    margin-bottom: 1px;
+    padding: 6px 20px;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     border-radius: 10px;
