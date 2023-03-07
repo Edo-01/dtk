@@ -278,7 +278,7 @@
     justify-content: flex-start;
     align-items: center;
 }
-.titolo-tab img {
+.titolo-tab img { 
     width: 45px;
     margin-right: 15px;
 }

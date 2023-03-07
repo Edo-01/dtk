@@ -827,17 +827,18 @@ display: flex;
     border: 0px solid #BABABA;
     cursor: pointer;
     width: 50%;
-}
-.contenitore-bottoni button:first-of-type {
     margin-right: 10px;
+}
+.contenitore-bottoni button:last-of-type {
+    margin-right: 0px;
     background-color: #018762;
 }
 
 .contenitore-bottoni button:hover {
     background-color: #4e4e4e;
 }
-.contenitore-bottoni button:first-of-type:hover {
-    margin-right: 10px;
+.contenitore-bottoni button:last-of-type:hover {
+    margin-right: 0px;
     background-color: #004A36;
 }
 /* ----------------------------------------------media desk---------------------------------------------------------------- */

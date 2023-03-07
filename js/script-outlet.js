@@ -43,8 +43,16 @@ for(let i = 0; i < tastoDiminuisci.length; i++ ) {
     })
     
 } 
- 
+let divCarrelloDin = document.querySelectorAll('.carrello-dinamico');
 let numCarrelloDin = document.querySelectorAll('#num-carrello-din')
+
+
+
+for(let i = 0; i < divCarrelloDin.length; i++ ) { // nascondo tutti i carrelli dinamici gialli
+    divCarrelloDin[i].style.display = 'none';
+}
+
+
 
 
 for(let i = 0; i < numQuantita.length; i++ ) {
@@ -66,7 +74,7 @@ let addCarOut = document.querySelectorAll('#add-car-out');
 for(let i = 0; i < addCarOut.length; i++){
     addCarOut[i].addEventListener('click', function(e){
         e.preventDefault();
-       
+        divCarrelloDin[i].removeAttribute('style');
         numCarrelloDin[i].textContent = numQuantita[i].value;
         
     })

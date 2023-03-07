@@ -301,13 +301,10 @@
                         </div>
                         <div class="container-titolo sfondo larghezza25 titolo-utente">
                             <h2>Benvenuto<br><b>Giorgio Sgroi</b></h2>
-                            <div class="container-bottoni">
-                                <div class="button-slider">
-                                  <a href="#">My account</a>  
-                                </div>
-                                <div class="button-slider">
-                                    <a href="">Carrello</a>
-                                </div>
+                            <div class="container-rif-commerciale">
+                               <p>Riferimento commerciale: <span>Nome Cognome</span></p>
+                               <p>Telefono: <span><a href="tel:+39 333 3333333">+39 333 3333333</a></span></p>
+                               <p>Email: <span><a href="mailto:nome.cognome@email.com">nome.cognome@email.com</a></span></p>
                             </div>
                         </div>
                     </div>
@@ -316,7 +313,7 @@
         </div>
       </section>
 
-
+ 
 
       <section>
         <div class="margin-section">
@@ -437,8 +434,9 @@
                             <input type="text">
                         </div>
                         <div>
-                            <label style="visibility:hidden" for="">Tipologie</label>
-                            <button type="submit">Ricerca</button>
+                            <!-- <label style="visibility:hidden" for="">Tipologie</label> -->
+                            <button class="bottone-azzera" type="submit">Azzera</button>
+                            <button class="bottone-ricerca" type="submit">Ricerca</button>
                         </div>
                       </form>
                 </div>
@@ -454,33 +452,7 @@
                     <h2>Prodotti in Evidenza <span id="tot-num-prodotti"></span></h2>
                 </div>
                 <div class="container-50">
-                    <div class="linea-tasti">
-                        <div id="container-mostra" class="container-mostra">
-                            <p class="testo">MOSTRA</p>
-                            <div id="paginazione" class="paginazione">
-                                <div class="custom-select">
-                                    <div class="riga-select">
-                                        <p  class="numeri numero-mostrato"></p>
-                                    </div>
-                                    <div id="tendina"  class="tendina-nascosta">
-                                        <div id="valore-5" class="riga-select riga-select-hover">
-                                            <p  class="numeri leggeri">5</p>
-                                        </div>
-                                        <div id="valore-10" class="riga-select riga-select-hover">
-                                            <p  class="numeri leggeri">10</p>
-                                        </div>
-                                        <div id="valore-15" class="riga-select riga-select-hover">
-                                            <p  class="numeri leggeri">15</p>
-                                        </div>
-                                        <div id="valore-20" class="riga-select riga-select-hover">
-                                            <p  class="numeri leggeri">20</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <img src="img/freccia-giu.png" alt="" width="9px">
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
         </div>
@@ -495,7 +467,7 @@
         <!-- <div class="container-100">
            <h2>Prodotti in evidenza</h2>
         </div> -->
-        <div class="container-100-product">
+        <div class="container-100-product allinea-strech">
 
 
           <div class="box-product">
@@ -511,83 +483,33 @@
               <p class="categoria">Attrezzature tecniche</p>
               <h3 class="titolo-prodotto"><a href="http://">Filtro universale Hepa 3M/Omega vacafwfcwawfwf</a></h3> <!-- limite a 46 caratteri -->
             <div class="container-prezzi">
-                <div class="row-sconto">
+                <div class="row-sconto align-sx">
                     <div class="sconto-percentuale">
                         <p>20%</p>
                     </div>
                     <p>45,00€</p>
                 </div>
-                <div class="row-prezzo">
-                    <p class="prezzo-big">36,<span>60 </span>€</p>
-                    <div class="quantita">
-                        
-                            <img id="tasto-aumenta" src="img/piu.svg" alt="">
-                        
-                        <p id="num-quantita"></p>
-                        
-                            <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                        
+                <div class="row-prezzo align-sx justify-center">
+                    <p class="prezzo-big">36,60€</p>
+                    <div class="quantita dimensione">
+                      <img id="tasto-diminuisci" src="img/meno.svg" alt="">
+                      <input id="num-quantita" type="number" value="1" min="1" max="999">
+                      <img id="tasto-aumenta" src="img/piu.svg" alt="">
                     </div>
                 </div>
             </div>
             </div>
-            <div class="container-button-product">
+            <div id="add-car-out" class="container-button-product altezza-mob">
               <a href="">Aggiungi al carrello</a>
               <img src="img/vai.png" alt="">
             </div>
             <div class="novita">
               <p>Novità</p>
             </div>
-            <!-- <div class="disponibilita">
-              <div class="cerchio-rosso"></div>
-              <p>NON DISPONIBILE</p>
-            </div> -->
-          </div>
-          
-          <div class="box-product">
-            <div class="box-superiore">
-              <div class="container-img">
-                <a href=""><img src="img/prodotto1.png" alt=""></a>
-                
-              </div>
-              <div class="disponibilita-no-abs">
-                <div class="cerchio-verde"></div>
-                <p>DISPONIBILE<br></p>
+            <div class="carrello-dinamico">
+              <img src="img/shop-black.svg" alt="">
+              <p id="num-carrello-din">0</p>
             </div>
-              <p class="categoria">Attrezzature tecniche</p>
-              <h3 class="titolo-prodotto"><a href="http://">Filtro universale Hepa 3M/Omega vacafwfcwawfwf</a></h3> <!-- limite a 46 caratteri -->
-            <div class="container-prezzi">
-                <div class="row-sconto">
-                    <div class="sconto-percentuale">
-                        <p>20%</p>
-                    </div>
-                    <p>45,00€</p>
-                </div>
-                <div class="row-prezzo">
-                    <p class="prezzo-big">36,<span>60 </span>€</p>
-                    <div class="quantita">
-                        
-                            <img id="tasto-aumenta" src="img/piu.svg" alt="">
-                        
-                        <p id="num-quantita"></p>
-                        
-                            <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                        
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="container-button-product">
-              <a href="">Aggiungi al carrello</a>
-              <img src="img/vai.png" alt="">
-            </div>
-            <div class="novita">
-              <p>Novità</p>
-            </div>
-            <!-- <div class="disponibilita">
-              <div class="cerchio-verde"></div>
-              <p>DISPONIBILE</p>
-            </div> -->
             
           </div>
           <div class="box-product">
@@ -597,86 +519,41 @@
                 
               </div>
               <div class="disponibilita-no-abs">
-                <div class="cerchio-rosso"></div>
-                <p>NON DISPONIBILE<br></p>
-            </div>
-              <p class="categoria">Attrezzature tecniche</p>
-              <h3 class="titolo-prodotto"><a href="http://">Filtro universale Hepa 3M/Omega vacafwfcwawfwf</a></h3> <!-- limite a 46 caratteri -->
-            <div class="container-prezzi">
-                <div class="row-sconto">
-                    <div class="sconto-percentuale">
-                        <p>20%</p>
-                    </div>
-                    <p>45,00€</p>
-                </div>
-                <div class="row-prezzo">
-                    <p class="prezzo-big">36,<span>60 </span>€</p>
-                    <div class="quantita">
-                        
-                            <img id="tasto-aumenta" src="img/piu.svg" alt="">
-                        
-                        <p id="num-quantita"></p>
-                        
-                            <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                        
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="container-button-product">
-              <a href="">Aggiungi al carrello</a>
-              <img src="img/vai.png" alt="">
-            </div>
-            <!-- <div class="disponibilita">
-              <div class="cerchio-verde"></div>
-              <p>DISPONIBILE</p>
-            </div> -->
-          </div>
-          
-          <div class="box-product">
-            <div class="box-superiore">
-              <div class="container-img">
-                <a href=""><img src="img/prodotto1.png" alt=""></a>
-                
-              </div>
-              <div class="disponibilita-no-abs">
-                <div class="cerchio-rosso"></div>
-                <p>NON DISPONIBILE<br></p>
-            </div>
-              <p class="categoria">Attrezzature tecniche</p>
-              <h3 class="titolo-prodotto"><a href="http://">Filtro universale Hepa 3M/Omega vacafwfcwawfwf</a></h3> <!-- limite a 46 caratteri -->
-            <div class="container-prezzi">
-                <div class="row-sconto">
-                    <div class="sconto-percentuale">
-                        <p>20%</p>
-                    </div>
-                    <p>45,00€</p>
-                </div>
-                <div class="row-prezzo">
-                    <p class="prezzo-big">36,<span>60 </span>€</p>
-                    <div class="quantita">
-                        
-                            <img id="tasto-aumenta" src="img/piu.svg" alt="">
-                        
-                        <p id="num-quantita"></p>
-                        
-                            <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                        
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="container-button-product">
-              <a href="">Aggiungi al carrello</a>
-              <img src="img/vai.png" alt="">
-            </div>
-            
-            <!-- <div class="disponibilita">
                 <div class="cerchio-verde"></div>
                 <p>DISPONIBILE</p>
-              </div> -->
+            </div>
+              <p class="categoria">Attrezzature tecniche</p>
+              <h3 class="titolo-prodotto"><a href="http://">Filtro universale Hepa 3M/Omega vacafwfcwawfwf</a></h3> <!-- limite a 46 caratteri -->
+            <div class="container-prezzi">
+                <div class="row-sconto align-sx">
+                    <div class="sconto-percentuale">
+                        <p>20%</p>
+                    </div>
+                    <p>45,00€</p>
+                </div>
+                <div class="row-prezzo align-sx justify-center">
+                    <p class="prezzo-big">36,60€</p>
+                    <div class="quantita dimensione">
+                      <img id="tasto-diminuisci" src="img/meno.svg" alt="">
+                      <input id="num-quantita" type="number" value="1" min="1" max="999">
+                      <img id="tasto-aumenta" src="img/piu.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div id="add-car-out" class="container-button-product altezza-mob">
+              <a href="">Aggiungi al carrello</a>
+              <img src="img/vai.png" alt="">
+            </div>
+            <div class="novita">
+              <p>Novità</p>
+            </div>
+            <div class="carrello-dinamico">
+              <img src="img/shop-black.svg" alt="">
+              <p id="num-carrello-din">0</p>
+            </div>
+            
           </div>
-
           <div class="box-product">
             <div class="box-superiore">
               <div class="container-img">
@@ -684,45 +561,41 @@
                 
               </div>
               <div class="disponibilita-no-abs">
-                <div class="cerchio-verde"></div>
-                <p>DISPONIBILE<br></p>
-            </div>
-              <p class="categoria">Attrezzature tecniche</p>
-              <h3 class="titolo-prodotto"><a href="http://">Filtro universale Hepa 3M/Omega vacafwfcwawfwf</a></h3> <!-- limite a 46 caratteri -->
-            <div class="container-prezzi">
-                <div class="row-sconto">
-                    <div class="sconto-percentuale">
-                        <p>20%</p>
-                    </div>
-                    <p>45,00€</p>
-                </div>
-                <div class="row-prezzo">
-                    <p class="prezzo-big">36,<span>60 </span>€</p>
-                    <div class="quantita">
-                        
-                            <img id="tasto-aumenta" src="img/piu.svg" alt="">
-                        
-                        <p id="num-quantita"></p>
-                        
-                            <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                        
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="container-button-product">
-              <a href="">Aggiungi al carrello</a>
-              <img src="img/vai.png" alt="">
-            </div>
-            <div class="promozione">
-              <p>Outlet</p>
-            </div>
-            <!-- <div class="disponibilita">
                 <div class="cerchio-rosso"></div>
                 <p>NON DISPONIBILE</p>
-              </div> -->
+            </div>
+              <p class="categoria">Attrezzature tecniche</p>
+              <h3 class="titolo-prodotto"><a href="http://">Filtro universale Hepa 3M/Omega vacafwfcwawfwf</a></h3> <!-- limite a 46 caratteri -->
+            <div class="container-prezzi">
+                <div class="row-sconto align-sx">
+                    <div class="sconto-percentuale">
+                        <p>20%</p>
+                    </div>
+                    <p>45,00€</p>
+                </div>
+                <div class="row-prezzo align-sx justify-center">
+                    <p class="prezzo-big">36,60€</p>
+                    <div class="quantita dimensione">
+                      <img id="tasto-diminuisci" src="img/meno.svg" alt="">
+                      <input id="num-quantita" type="number" value="1" min="1" max="999">
+                      <img id="tasto-aumenta" src="img/piu.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div id="add-car-out" class="container-button-product altezza-mob">
+              <a href="">Aggiungi al carrello</a>
+              <img src="img/vai.png" alt="">
+            </div>
+            <div class="novita">
+              <p>Novità</p>
+            </div>
+            <div class="carrello-dinamico">
+              <img src="img/shop-black.svg" alt="">
+              <p id="num-carrello-din">0</p>
+            </div>
+            
           </div>
-          
           <div class="box-product">
             <div class="box-superiore">
               <div class="container-img">
@@ -730,541 +603,88 @@
                 
               </div>
               <div class="disponibilita-no-abs">
-                <div class="cerchio-rosso"></div>
-                <p>NON DISPONIBILE<br></p>
+                <div class="cerchio-verde"></div>
+                <p>DISPONIBILE</p>
             </div>
               <p class="categoria">Attrezzature tecniche</p>
               <h3 class="titolo-prodotto"><a href="http://">Filtro universale Hepa 3M/Omega vacafwfcwawfwf</a></h3> <!-- limite a 46 caratteri -->
             <div class="container-prezzi">
-                <div class="row-sconto">
+                <div class="row-sconto align-sx">
                     <div class="sconto-percentuale">
                         <p>20%</p>
                     </div>
                     <p>45,00€</p>
                 </div>
-                <div class="row-prezzo">
-                    <p class="prezzo-big">36,<span>60 </span>€</p>
-                    <div class="quantita">
-                        
-                            <img id="tasto-aumenta" src="img/piu.svg" alt="">
-                        
-                        <p id="num-quantita"></p>
-                        
-                            <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                        
+                <div class="row-prezzo align-sx justify-center">
+                    <p class="prezzo-big">36,60€</p>
+                    <div class="quantita dimensione">
+                      <img id="tasto-diminuisci" src="img/meno.svg" alt="">
+                      <input id="num-quantita" type="number" value="1" min="1" max="999">
+                      <img id="tasto-aumenta" src="img/piu.svg" alt="">
                     </div>
                 </div>
             </div>
             </div>
-            <div class="container-button-product">
+            <div id="add-car-out" class="container-button-product altezza-mob">
               <a href="">Aggiungi al carrello</a>
               <img src="img/vai.png" alt="">
             </div>
+            <div class="novita">
+              <p>Novità</p>
+            </div>
+            <div class="carrello-dinamico">
+              <img src="img/shop-black.svg" alt="">
+              <p id="num-carrello-din">0</p>
+            </div>
             
-            <!-- <div class="disponibilita">
+          </div>
+          <div class="box-product">
+            <div class="box-superiore">
+              <div class="container-img">
+                <a href=""><img src="img/prodotto1.png" alt=""></a>
+                
+              </div>
+              <div class="disponibilita-no-abs">
                 <div class="cerchio-rosso"></div>
                 <p>NON DISPONIBILE</p>
-              </div> -->
-          </div>
-
-          <div class="box-product">
-            <div class="box-superiore">
-              <div class="container-img">
-                <a href=""><img src="img/prodotto1.png" alt=""></a>
-                
-              </div>
-              <div class="disponibilita-no-abs">
-                <div class="cerchio-rosso"></div>
-                <p>NON DISPONIBILE<br></p>
             </div>
               <p class="categoria">Attrezzature tecniche</p>
               <h3 class="titolo-prodotto"><a href="http://">Filtro universale Hepa 3M/Omega vacafwfcwawfwf</a></h3> <!-- limite a 46 caratteri -->
             <div class="container-prezzi">
-                <div class="row-sconto">
+                <div class="row-sconto align-sx">
                     <div class="sconto-percentuale">
                         <p>20%</p>
                     </div>
                     <p>45,00€</p>
                 </div>
-                <div class="row-prezzo">
-                    <p class="prezzo-big">36,<span>60 </span>€</p>
-                    <div class="quantita">
-                        
-                            <img id="tasto-aumenta" src="img/piu.svg" alt="">
-                        
-                        <p id="num-quantita"></p>
-                        
-                            <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                        
+                <div class="row-prezzo align-sx justify-center">
+                    <p class="prezzo-big">36,60€</p>
+                    <div class="quantita dimensione">
+                      <img id="tasto-diminuisci" src="img/meno.svg" alt="">
+                      <input id="num-quantita" type="number" value="1" min="1" max="999">
+                      <img id="tasto-aumenta" src="img/piu.svg" alt="">
                     </div>
                 </div>
             </div>
             </div>
-            <div class="container-button-product">
-              <a href="">Aggiungi al carrello</a>
-              <img src="img/vai.png" alt="">
-            </div>
-            <div class="promozione">
-              <p>Outlet</p>
-            </div>
-            <!-- <div class="disponibilita">
-                <div class="cerchio-verde"></div>
-                <p>DISPONIBILE</p>
-              </div> -->
-          </div>
-          
-          <div class="box-product">
-            <div class="box-superiore">
-              <div class="container-img">
-                <a href=""><img src="img/prodotto1.png" alt=""></a>
-                
-              </div>
-              <div class="disponibilita-no-abs">
-                <div class="cerchio-verde"></div>
-                <p>DISPONIBILE<br></p>
-            </div>
-              <p class="categoria">Attrezzature tecniche</p>
-              <h3 class="titolo-prodotto"><a href="http://">Filtro universale Hepa 3M/Omega vacafwfcwawfwf</a></h3> <!-- limite a 46 caratteri -->
-            <div class="container-prezzi">
-                <div class="row-sconto">
-                    <div class="sconto-percentuale">
-                        <p>20%</p>
-                    </div>
-                    <p>45,00€</p>
-                </div>
-                <div class="row-prezzo">
-                    <p class="prezzo-big">36,<span>60 </span>€</p>
-                    <div class="quantita">
-                        
-                            <img id="tasto-aumenta" src="img/piu.svg" alt="">
-                        
-                        <p id="num-quantita"></p>
-                        
-                            <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                        
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="container-button-product">
-              <a href="">Aggiungi al carrello</a>
-              <img src="img/vai.png" alt="">
-            </div>
-            
-            <!-- <div class="disponibilita">
-                <div class="cerchio-verde"></div>
-                <p>DISPONIBILE</p>
-              </div> -->
-          </div>
-
-          <div class="box-product">
-            <div class="box-superiore">
-              <div class="container-img">
-                <a href=""><img src="img/prodotto1.png" alt=""></a>
-                
-              </div>
-              <div class="disponibilita-no-abs">
-                <div class="cerchio-verde"></div>
-                <p>DISPONIBILE<br></p>
-            </div>
-              <p class="categoria">Attrezzature tecniche</p>
-              <h3 class="titolo-prodotto"><a href="http://">Filtro universale Hepa 3M/Omega vacafwfcwawfwf</a></h3> <!-- limite a 46 caratteri -->
-            <div class="container-prezzi">
-                <div class="row-sconto">
-                    <div class="sconto-percentuale">
-                        <p>20%</p>
-                    </div>
-                    <p>45,00€</p>
-                </div>
-                <div class="row-prezzo">
-                    <p class="prezzo-big">36,<span>60 </span>€</p>
-                    <div class="quantita">
-                        
-                            <img id="tasto-aumenta" src="img/piu.svg" alt="">
-                        
-                        <p id="num-quantita"></p>
-                        
-                            <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                        
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="container-button-product">
-              <a href="">Aggiungi al carrello</a>
-              <img src="img/vai.png" alt="">
-            </div>
-            <div class="promozione">
-              <p>Outlet</p>
-            </div>
-            <!-- <div class="disponibilita">
-                <div class="cerchio-verde"></div>
-                <p>DISPONIBILE</p>
-              </div> -->
-          </div>
-          
-          <div class="box-product">
-            <div class="box-superiore">
-              <div class="container-img">
-                <a href=""><img src="img/prodotto1.png" alt=""></a>
-                
-              </div>
-              <div class="disponibilita-no-abs">
-                <div class="cerchio-verde"></div>
-                <p>DISPONIBILE<br></p>
-            </div>
-              <p class="categoria">Attrezzature tecniche</p>
-              <h3 class="titolo-prodotto"><a href="http://">Filtro universale Hepa 3M/Omega vacafwfcwawfwf</a></h3> <!-- limite a 46 caratteri -->
-            <div class="container-prezzi">
-                <div class="row-sconto">
-                    <div class="sconto-percentuale">
-                        <p>20%</p>
-                    </div>
-                    <p>45,00€</p>
-                </div>
-                <div class="row-prezzo">
-                    <p class="prezzo-big">36,<span>60 </span>€</p>
-                    <div class="quantita">
-                        
-                            <img id="tasto-aumenta" src="img/piu.svg" alt="">
-                        
-                        <p id="num-quantita"></p>
-                        
-                            <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                        
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="container-button-product">
-              <a href="">Aggiungi al carrello</a>
-              <img src="img/vai.png" alt="">
-            </div>
-            <div class="promozione">
-              <p>Outlet</p>
-            </div>
-            <!-- <div class="disponibilita">
-                <div class="cerchio-verde"></div>
-                <p>DISPONIBILE</p>
-              </div> -->
-          </div>
-
-          <div class="box-product">
-            <div class="box-superiore">
-              <div class="container-img">
-                <a href=""><img src="img/prodotto1.png" alt=""></a>
-                
-              </div>
-              <div class="disponibilita-no-abs">
-                <div class="cerchio-rosso"></div>
-                <p>NON DISPONIBILE<br></p>
-            </div>
-              <p class="categoria">Attrezzature tecniche</p>
-              <h3 class="titolo-prodotto"><a href="http://">Filtro universale Hepa 3M/Omega vacafwfcwawfwf</a></h3> <!-- limite a 46 caratteri -->
-            <div class="container-prezzi">
-                <div class="row-sconto">
-                    <div class="sconto-percentuale">
-                        <p>20%</p>
-                    </div>
-                    <p>45,00€</p>
-                </div>
-                <div class="row-prezzo">
-                    <p class="prezzo-big">36,<span>60 </span>€</p>
-                    <div class="quantita">
-                        
-                            <img id="tasto-aumenta" src="img/piu.svg" alt="">
-                        
-                        <p id="num-quantita"></p>
-                        
-                            <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                        
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="container-button-product">
-              <a href="">Aggiungi al carrello</a>
-              <img src="img/vai.png" alt="">
-            </div>
-            
-            <!-- <div class="disponibilita">
-                <div class="cerchio-verde"></div>
-                <p>DISPONIBILE</p>
-              </div> -->
-          </div>
-          
-          <div class="box-product">
-            <div class="box-superiore">
-              <div class="container-img">
-                <a href=""><img src="img/prodotto1.png" alt=""></a>
-                
-              </div>
-              <div class="disponibilita-no-abs">
-                <div class="cerchio-verde"></div>
-                <p>DISPONIBILE<br></p>
-            </div>
-              <p class="categoria">Attrezzature tecniche</p>
-              <h3 class="titolo-prodotto"><a href="http://">Filtro universale Hepa 3M/Omega vacafwfcwawfwf</a></h3> <!-- limite a 46 caratteri -->
-            <div class="container-prezzi">
-                <div class="row-sconto">
-                    <div class="sconto-percentuale">
-                        <p>20%</p>
-                    </div>
-                    <p>45,00€</p>
-                </div>
-                <div class="row-prezzo">
-                    <p class="prezzo-big">36,<span>60 </span>€</p>
-                    <div class="quantita">
-                        
-                            <img id="tasto-aumenta" src="img/piu.svg" alt="">
-                        
-                        <p id="num-quantita"></p>
-                        
-                            <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                        
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="container-button-product">
+            <div id="add-car-out" class="container-button-product altezza-mob">
               <a href="">Aggiungi al carrello</a>
               <img src="img/vai.png" alt="">
             </div>
             <div class="novita">
               <p>Novità</p>
             </div>
-            <!-- <div class="disponibilita">
-                <div class="cerchio-verde"></div>
-                <p>DISPONIBILE</p>
-              </div> -->
-          </div>
-
-          <div class="box-product">
-            <div class="box-superiore">
-              <div class="container-img">
-                <a href=""><img src="img/prodotto1.png" alt=""></a>
-                
-              </div>
-              <div class="disponibilita-no-abs">
-                <div class="cerchio-verde"></div>
-                <p>DISPONIBILE<br></p>
-            </div>
-              <p class="categoria">Attrezzature tecniche</p>
-              <h3 class="titolo-prodotto"><a href="http://">Filtro universale Hepa 3M/Omega vacafwfcwawfwf</a></h3> <!-- limite a 46 caratteri -->
-            <div class="container-prezzi">
-                <div class="row-sconto">
-                    <div class="sconto-percentuale">
-                        <p>20%</p>
-                    </div>
-                    <p>45,00€</p>
-                </div>
-                <div class="row-prezzo">
-                    <p class="prezzo-big">36,<span>60 </span>€</p>
-                    <div class="quantita">
-                        
-                            <img id="tasto-aumenta" src="img/piu.svg" alt="">
-                        
-                        <p id="num-quantita"></p>
-                        
-                            <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                        
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="container-button-product">
-              <a href="">Aggiungi al carrello</a>
-              <img src="img/vai.png" alt="">
+            <div class="carrello-dinamico">
+              <img src="img/shop-black.svg" alt="">
+              <p id="num-carrello-din">0</p>
             </div>
             
-            <!-- <div class="disponibilita">
-                <div class="cerchio-verde"></div>
-                <p>DISPONIBILE</p>
-              </div> -->
-          </div>
-          
-          <div class="box-product">
-            <div class="box-superiore">
-              <div class="container-img">
-                <a href=""><img src="img/prodotto1.png" alt=""></a>
-                
-              </div>
-              <div class="disponibilita-no-abs">
-                <div class="cerchio-rosso"></div>
-                <p>NON DISPONIBILE<br></p>
-            </div>
-              <p class="categoria">Attrezzature tecniche</p>
-              <h3 class="titolo-prodotto"><a href="http://">Filtro universale Hepa 3M/Omega vacafwfcwawfwf</a></h3> <!-- limite a 46 caratteri -->
-            <div class="container-prezzi">
-                <div class="row-sconto">
-                    <div class="sconto-percentuale">
-                        <p>20%</p>
-                    </div>
-                    <p>45,00€</p>
-                </div>
-                <div class="row-prezzo">
-                    <p class="prezzo-big">36,<span>60 </span>€</p>
-                    <div class="quantita">
-                        
-                            <img id="tasto-aumenta" src="img/piu.svg" alt="">
-                        
-                        <p id="num-quantita"></p>
-                        
-                            <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                        
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="container-button-product">
-              <a href="">Aggiungi al carrello</a>
-              <img src="img/vai.png" alt="">
-            </div>
-            <div class="novita">
-              <p>Novità</p>
-            </div>
-            <!-- <div class="disponibilita">
-                <div class="cerchio-rosso"></div>
-                <p>NON DISPONIBILE</p>
-              </div> -->
           </div>
 
-          <div class="box-product">
-            <div class="box-superiore">
-              <div class="container-img">
-                <a href=""><img src="img/prodotto1.png" alt=""></a>
-                
-              </div>
-              <div class="disponibilita-no-abs">
-                <div class="cerchio-rosso"></div>
-                <p>NON DISPONIBILE<br></p>
-            </div>
-              <p class="categoria">Attrezzature tecniche</p>
-              <h3 class="titolo-prodotto"><a href="http://">Filtro universale Hepa 3M/Omega vacafwfcwawfwf</a></h3> <!-- limite a 46 caratteri -->
-            <div class="container-prezzi">
-                <div class="row-sconto">
-                    <div class="sconto-percentuale">
-                        <p>20%</p>
-                    </div>
-                    <p>45,00€</p>
-                </div>
-                <div class="row-prezzo">
-                    <p class="prezzo-big">36,<span>60 </span>€</p>
-                    <div class="quantita">
-                        
-                            <img id="tasto-aumenta" src="img/piu.svg" alt="">
-                        
-                        <p id="num-quantita"></p>
-                        
-                            <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                        
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="container-button-product">
-              <a href="">Aggiungi al carrello</a>
-              <img src="img/vai.png" alt="">
-            </div>
-            <div class="promozione">
-              <p>Outlet</p>
-            </div>
-            <!-- <div class="disponibilita">
-                <div class="cerchio-verde"></div>
-                <p>DISPONIBILE</p>
-              </div> -->
-          </div>
+         
+       
           
-          <div class="box-product">
-            <div class="box-superiore">
-              <div class="container-img">
-                <a href=""><img src="img/prodotto1.png" alt=""></a>
-                
-              </div>
-              <div class="disponibilita-no-abs">
-                <div class="cerchio-rosso"></div>
-                <p>NON DISPONIBILE<br></p>
-            </div>
-              <p class="categoria">Attrezzature tecniche</p>
-              <h3 class="titolo-prodotto"><a href="http://">Filtro universale Hepa 3M/Omega vacafwfcwawfwf</a></h3> <!-- limite a 46 caratteri -->
-            <div class="container-prezzi">
-                <div class="row-sconto">
-                    <div class="sconto-percentuale">
-                        <p>20%</p>
-                    </div>
-                    <p>45,00€</p>
-                </div>
-                <div class="row-prezzo">
-                    <p class="prezzo-big">36,<span>60 </span>€</p>
-                    <div class="quantita">
-                        
-                            <img id="tasto-aumenta" src="img/piu.svg" alt="">
-                        
-                        <p id="num-quantita"></p>
-                        
-                            <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                        
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="container-button-product">
-              <a href="">Aggiungi al carrello</a>
-              <img src="img/vai.png" alt="">
-            </div>
-            <div class="novita">
-              <p>Novità</p>
-            </div>
-            <!-- <div class="disponibilita">
-                <div class="cerchio-verde"></div>
-                <p>DISPONIBILE</p>
-              </div> -->
-          </div>
 
-          <div class="box-product">
-            <div class="box-superiore">
-              <div class="container-img">
-                <a href=""><img src="img/prodotto1.png" alt=""></a>
-                
-              </div>
-              <div class="disponibilita-no-abs">
-                <div class="cerchio-rosso"></div>
-                <p>NON DISPONIBILE<br></p>
-            </div>
-              <p class="categoria">Attrezzature tecniche</p>
-              <h3 class="titolo-prodotto"><a href="http://">Filtro universale Hepa 3M/Omega vacafwfcwawfwf</a></h3> <!-- limite a 46 caratteri -->
-            <div class="container-prezzi">
-                <div class="row-sconto">
-                    <div class="sconto-percentuale">
-                        <p>20%</p>
-                    </div>
-                    <p>45,00€</p>
-                </div>
-                <div class="row-prezzo">
-                    <p class="prezzo-big">36,<span>60 </span>€</p>
-                    <div class="quantita">
-                        
-                            <img id="tasto-aumenta" src="img/piu.svg" alt="">
-                        
-                        <p id="num-quantita"></p>
-                        
-                            <img id="tasto-diminuisci" src="img/meno.svg" alt="">
-                        
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="container-button-product">
-              <a href="">Aggiungi al carrello</a>
-              <img src="img/vai.png" alt="">
-            </div>
-            
-            <!-- <div class="disponibilita">
-                <div class="cerchio-verde"></div>
-                <p>DISPONIBILE</p>
-              </div> -->
-          </div>
-          
           
       </div>
     </div>
@@ -1346,7 +766,8 @@
     </div>
   </div>
 </footer>
-      <script src="js/script-header.js"></script>
-      <script src="js/script-outlet.js"></script>
+   <script src="js/script-home-login.js"></script>
+   <script src="js/script-header.js"></script>
+   <script src="js/script-outlet.js"></script>
 </body>
 </html>
