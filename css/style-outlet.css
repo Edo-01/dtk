@@ -599,6 +599,7 @@ p.descrizione {
     
     display: flex;
     justify-content: flex-end;
+    
 }
 .quantita {
     display: flex;

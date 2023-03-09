@@ -191,7 +191,7 @@ let bottoneScopriOfferta = document.querySelector('#button-scopri-offerta');
 //     })
 // }
 
-  
+   
 
 let sfondoPopUp = document.querySelector('.sfondo-popup-outlet');
 sfondoPopUp.style.display = 'none';

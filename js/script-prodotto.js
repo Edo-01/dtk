@@ -51,10 +51,31 @@ for(let i = 0; i < immmaginiCroselloEsteso.length; i++) {
 }
 
 
+let tastoAumentaMain = document.querySelectorAll('#tasto-aumenta-main');  
+let tastoDiminuisciMain = document.querySelectorAll('#tasto-diminuisci-main');  
+let numQuantitaMain = document.querySelectorAll('#num-quantita-main');  // 1
+for(let i = 0; i < tastoAumentaMain.length; i++ ) {
+    tastoAumentaMain[i].addEventListener('click', function() {
+        if(numQuantitaMain[i].value !== '999') {
+            numQuantitaMain[i].value++;
+            
+        }
+    })
+}   
 
 
+for(let i = 0; i < tastoDiminuisciMain.length; i++ ) {
+    tastoDiminuisciMain[i].addEventListener('click', function() {
+        if(numQuantitaMain[i].value !== '1') {
+            numQuantitaMain[i].value--;
+            
+        }
+    })
+    
+} 
 
 
+ 
 
 
 
@@ -64,31 +85,75 @@ let tastoDiminuisci = document.querySelectorAll('#tasto-diminuisci');
 let numQuantita = document.querySelectorAll('#num-quantita');  // 1
 
 
-for(let i = 0; i < numQuantita.length; i++ ) {
-    numQuantita[i].textContent = 1;
-}
-
-
 
 for(let i = 0; i < tastoAumenta.length; i++ ) {
     tastoAumenta[i].addEventListener('click', function() {
-        if(numQuantita[i].textContent !== '100') {
-            numQuantita[i].textContent++;
+        if(numQuantita[i].value !== '999') {
+            numQuantita[i].value++;
             
         }
     })
 }   
 
 
-for (let i = 0; i < tastoDiminuisci.length; i++) {
-    tastoDiminuisci[i].addEventListener('click', function () {
-        if (numQuantita[i].textContent !== '1') {
-            numQuantita[i].textContent--;
-
+for(let i = 0; i < tastoDiminuisci.length; i++ ) {
+    tastoDiminuisci[i].addEventListener('click', function() {
+        if(numQuantita[i].value !== '1') {
+            numQuantita[i].value--;
+            
         }
     })
-
+    
 } 
+
+
+
+
+
+
+
+
+
+
+
+let divCarrelloDin = document.querySelectorAll('.carrello-dinamico');
+let numCarrelloDin = document.querySelectorAll('#num-carrello-din')
+
+
+
+for(let i = 0; i < divCarrelloDin.length; i++ ) { // nascondo tutti i carrelli dinamici gialli
+    divCarrelloDin[i].style.display = 'none';
+}
+
+
+
+
+for(let i = 0; i < numQuantita.length; i++ ) {
+    numQuantita[i].value = 1;
+    numQuantita[i].addEventListener('change', function(){
+        if(numQuantita[i].value < 1){
+            numQuantita[i].value = 1;
+        }
+        if(numQuantita[i].value > 999){
+            numQuantita[i].value = 999;
+        }
+    })
+}
+
+
+let addCarOut = document.querySelectorAll('#add-car-out');
+
+
+for(let i = 0; i < addCarOut.length; i++){
+    addCarOut[i].addEventListener('click', function(e){
+        e.preventDefault();
+        divCarrelloDin[i].removeAttribute('style');
+        numCarrelloDin[i].textContent = numQuantita[i].value;
+        
+    })
+}
+
+
 
 
 let chiudiCaroselloEsteso = document.querySelector('#chiudi-carosello-esteso');
@@ -102,7 +167,7 @@ chiudiCaroselloEsteso.addEventListener('click', function(){
 })
 
 
-
+ 
 
 let veloHoverImg = document.querySelector('#over-text');
 
@@ -130,3 +195,68 @@ openOverView.addEventListener('click', function(){
     immagineEvidenzaEsteso.src = immagineEvidenza.src;
     
 })
+
+
+
+
+
+let tastoMostraModelli1 = document.querySelector('.linea-modelli-compatibili h3');
+let tastoMostraModelli2 = document.querySelector('.linea-modelli-compatibili img');
+let contenutoModelli = document.querySelector('#contenuto-modelli');
+
+contenutoModelli.style.display = 'none';
+
+tastoMostraModelli1.addEventListener('click', function(){
+    if(contenutoModelli.style.display == 'none'){
+        contenutoModelli.removeAttribute('style');
+        tastoMostraModelli2.src = 'img/vai-pos-meno.svg';
+        contenutoModelli.previousElementSibling.classList.add('no-border');
+    } else {
+        contenutoModelli.style.display = 'none';
+        tastoMostraModelli2.src = 'img/vai-pos.svg';
+        contenutoModelli.previousElementSibling.classList.remove('no-border');
+    }
+})
+tastoMostraModelli2.addEventListener('click', function(){
+    if(contenutoModelli.style.display == 'none'){
+        contenutoModelli.removeAttribute('style');
+        tastoMostraModelli2.src = 'img/vai-pos-meno.svg';
+        contenutoModelli.previousElementSibling.classList.add('no-border');
+    } else {
+        contenutoModelli.style.display = 'none';
+        tastoMostraModelli2.src = 'img/vai-pos.svg';
+        contenutoModelli.previousElementSibling.classList.remove('no-border');
+    }
+})
+
+
+
+let tastoMostraCodici1 = document.querySelector('.linea-codici-oem h3');
+let tastoMostraCodici2 = document.querySelector('.linea-codici-oem img');
+let contenutoCodici = document.querySelector('#contenuto-codici');
+
+contenutoCodici.style.display = 'none';
+
+tastoMostraCodici1.addEventListener('click', function(){
+    if(contenutoCodici.style.display == 'none'){
+        contenutoCodici.removeAttribute('style');
+        tastoMostraCodici2.src = 'img/vai-pos-meno.svg';
+        contenutoCodici.previousElementSibling.classList.add('no-border');
+    } else {
+        contenutoCodici.style.display = 'none';
+        tastoMostraCodici2.src = 'img/vai-pos.svg';
+        contenutoCodici.previousElementSibling.classList.remove('no-border');
+    }
+})
+tastoMostraCodici2.addEventListener('click', function(){
+    if(contenutoCodici.style.display == 'none'){
+        contenutoCodici.removeAttribute('style');
+        tastoMostraCodici2.src = 'img/vai-pos-meno.svg';
+        contenutoCodici.previousElementSibling.classList.add('no-border');
+    } else {
+        contenutoCodici.style.display = 'none';
+        tastoMostraCodici2.src = 'img/vai-pos.svg';
+        contenutoCodici.previousElementSibling.classList.remove('no-border');
+    }
+})
+
